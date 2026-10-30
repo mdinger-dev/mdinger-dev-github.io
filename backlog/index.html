@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Backlog — Mike's Game Wishlist</title>
+<meta name="description" content="Game wishlist with price tracking, sale alerts, and price history across Switch 2, iPhone, and PS5.">
+<style>
+  :root{
+    --bg:#0e1116; --surface:#161b22; --surface2:#1c232d; --border:#2a333f;
+    --text:#e9eef4; --muted:#97a5b4; --accent:#5b8cff; --accent-ink:#fff;
+    --red:#e5484d; --green:#3fb950; --shadow:rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 16px 40px}
+  header.site{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:20px 0 14px;border-bottom:1px solid var(--border)}
+  .logo{font-size:24px;font-weight:800;letter-spacing:.2px}
+  .logo span{color:var(--accent)}
+  nav.top{display:flex;gap:18px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+  nav.top a{color:var(--muted);text-decoration:none;cursor:pointer}
+  nav.top a.on{color:var(--text);font-weight:700}
+  .tagline{color:var(--muted);font-size:13.5px;margin:12px 0 0}
+  .addbar{display:flex;gap:8px;margin:18px 0 6px;flex-wrap:wrap}
+  .addbar input,.addbar select{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:11px 12px;font-size:14.5px;color:var(--text)}
+  .addbar input{flex:1 1 220px}
+  .addbar input::placeholder{color:var(--muted)}
+  .btn{background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:11px 18px;font-size:14.5px;font-weight:700;cursor:pointer}
+  .btn.secondary{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
+  .hint{font-size:12.5px;color:var(--muted);margin:2px 0 14px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .chip{font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer}
+  .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+  .stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .stat{flex:1 1 130px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:11px 13px}
+  .stat .n{font-size:20px;font-weight:800}
+  .stat .l{font-size:12px;color:var(--muted);margin-top:1px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px var(--shadow);display:flex;flex-direction:column}
+  .banner{height:158px;position:relative;overflow:hidden;background:#10141a;flex:none}
+  .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .banner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .banner .scrim{position:absolute;left:0;right:0;bottom:0;height:60%;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+  .salebadge{position:absolute;top:10px;left:10px;z-index:2;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:4px 9px;border-radius:6px;letter-spacing:.3px}
+  .playbtn{position:absolute;top:10px;right:10px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.55);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
+  .playbtn i{width:0;height:0;border-left:10px solid #fff;border-top:6.5px solid transparent;border-bottom:6.5px solid transparent;margin-left:2px}
+  .gtitle{position:absolute;left:12px;right:12px;bottom:9px;z-index:2;font-size:17.5px;font-weight:800;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6);line-height:1.2}
+  .body{padding:12px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .titlerow{display:flex;gap:10px;align-items:flex-start}
+  .thumb{width:46px;height:58px;border-radius:6px;object-fit:cover;border:1px solid var(--border);flex:none}
+  .plat{display:flex;gap:6px;flex-wrap:wrap}
+  .pb{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
+  .pb.platform{color:var(--text);border-color:var(--accent)}
+  .price-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .price{font-size:22px;font-weight:800}
+  .price.free{color:var(--green)}
+  .was{font-size:13.5px;color:var(--muted);text-decoration:line-through}
+  .ends{font-size:12.5px;font-weight:700;color:var(--red)}
+  .specs{display:grid;grid-template-columns:1fr 1fr;gap:7px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
+  .spec .k{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--muted)}
+  .spec .v{font-size:12.5px;font-weight:600;margin-top:1px}
+  .meta{font-size:13px;color:var(--muted);line-height:1.5}
+  .meta b{color:var(--text)}
+  .alert{font-size:12.5px;line-height:1.45;background:rgba(91,140,255,.1);border:1px solid rgba(91,140,255,.35);border-radius:10px;padding:8px 10px;color:var(--text)}
+  .spark{width:100%;height:26px}
+  .actions{display:flex;gap:8px;margin-top:auto;flex-wrap:wrap}
+  .a-btn{flex:1;text-align:center;font-size:13px;font-weight:700;padding:9px 6px;border-radius:9px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;text-decoration:none;white-space:nowrap}
+  .a-btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  .histbox{display:none;border-top:1px solid var(--border);padding-top:10px}
+  .histbox.open{display:block}
+  .histbox table{width:100%;border-collapse:collapse;font-size:12.5px}
+  .histbox th,.histbox td{text-align:left;padding:6px 4px;border-bottom:1px solid var(--border)}
+  .histbox th{color:var(--muted);font-size:11px;letter-spacing:.4px}
+  .histbox tr:last-child td{border-bottom:none}
+  .down{color:var(--green);font-weight:700}
+  .queued-card{border:1.5px dashed var(--border);border-radius:14px;padding:14px;background:var(--surface2);display:flex;flex-direction:column;gap:8px}
+  .q-badge{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.8px;padding:3px 8px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);width:fit-content}
+  .queued-card .qt{font-weight:800;font-size:15.5px}
+  .q-remove{align-self:flex-start;background:none;border:none;color:var(--muted);font-size:12.5px;cursor:pointer;padding:0;text-decoration:underline}
+  .queuebar{display:none;margin-top:14px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:12px 14px;gap:10px;align-items:center;flex-wrap:wrap}
+  .queuebar.show{display:flex}
+  .queuebar .qt2{font-size:13.5px;color:var(--muted);flex:1 1 200px}
+  footer{margin-top:26px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.6}
+  .err{background:rgba(229,72,77,.12);border:1px solid var(--red);border-radius:10px;padding:12px 14px;font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <div class="logo">The <span>Backlog</span></div>
+    <nav class="top" id="topnav">
+      <a data-filter="all" class="on">Wishlist</a>
+      <a data-filter="sale">On Sale</a>
+      <a data-filter="Switch 2">Switch 2</a>
+      <a data-filter="iPhone">iPhone</a>
+      <a data-filter="PS5">PS5</a>
+    </nav>
+  </header>
+  <p class="tagline">Every game Mike is watching — current prices, sale alerts with end dates, and the full price history behind each one.</p>
+
+  <div class="addbar">
+    <input id="q-name" type="text" placeholder="Add a game to track… e.g. Hades II" aria-label="Game name">
+    <select id="q-platform" aria-label="Platform">
+      <option>Switch 2</option>
+      <option>iPhone</option>
+      <option>PS5</option>
+    </select>
+    <button class="btn" id="q-add">Queue it</button>
+  </div>
+  <p class="hint">Queued games appear below as placeholders. Send the queue to Aria and she fills in the banner, box art, trailer, specs, and price tracking — or just name the game in chat, same result.</p>
+
+  <div class="chips" id="chips">
+    <div class="chip on" data-filter="all">All games</div>
+    <div class="chip" data-filter="Switch 2">Switch 2</div>
+    <div class="chip" data-filter="iPhone">iPhone</div>
+    <div class="chip" data-filter="PS5">PS5</div>
+    <div class="chip" data-filter="sale">On sale now</div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="grid" id="grid"></div>
+  <div class="queuebar" id="queuebar"></div>
+
+  <footer>
+    Prices and sale dates checked by Aria — sale alerts land in chat with the end date.<br>
+    <span id="updated"></span>
+  </footer>
+</div>
+<script>
+const REPO_ISSUES = "https://github.com/mdinger-dev/mdinger-dev-github.io/issues/new";
+const QKEY = "backlogQueueV1";
+let GAMES = [], FILTER = "all";
+let queue = [];
+try { queue = JSON.parse(localStorage.getItem(QKEY) || "[]"); } catch(e) { queue = []; }
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const money = n => (n === 0 ? "Free" : "$" + Number(n).toFixed(2));
+function fmtDate(iso){
+  if(!iso) return "";
+  const p = iso.split("-").map(Number);
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  return months[p[1]-1] + " " + p[2] + ", " + p[0];
+}
+function fmtDateShort(iso){
+  const p = iso.split("-").map(Number);
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  return months[p[1]-1] + " " + p[2];
+}
+function daysUntil(iso){
+  const now = new Date(); now.setHours(0,0,0,0);
+  const p = iso.split("-").map(Number);
+  const d = new Date(p[0], p[1]-1, p[2]);
+  return Math.round((d - now) / 86400000);
+}
+const onSale = g => g.regularPrice > 0 && g.price < g.regularPrice;
+
+function sparkline(g){
+  const h = g.history || [];
+  if(h.length < 2) return "";
+  const prices = h.map(x => x.price);
+  const min = Math.min(...prices), max = Math.max(...prices);
+  const W = 220, H = 30;
+  const xs = i => (i / (h.length - 1)) * (W - 8) + 4;
+  const ys = v => max === min ? H/2 : 5 + (1 - (v - min) / (max - min)) * (H - 10);
+  const pts = h.map((x,i) => xs(i) + "," + ys(x.price)).join(" ");
+  const flat = max === min;
+  const color = onSale(g) ? "#3fb950" : "#97a5b4";
+  return '<svg class="spark" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none"><polyline points="' + pts + '" fill="none" stroke="' + color + '" stroke-width="2.5"' + (flat ? ' stroke-dasharray="5 4"' : '') + '/></svg>';
+}
+
+function historyRows(g){
+  const rows = (g.history || []).slice().reverse().map((h,i,arr) => {
+    const next = arr[i+1];
+    let chg = "—";
+    if(next){
+      if(h.price < next.price) chg = '<span class="down">−' + Math.round((1 - h.price/next.price) * 100) + '%</span>';
+      else if(h.price > next.price) chg = "+" + Math.round((h.price/next.price - 1) * 100) + "%";
+    }
+    return "<tr><td>" + esc(fmtDateShort(h.date)) + "</td><td>" + esc(money(h.price)) + "</td><td>" + chg + "</td><td>" + esc(h.note || "") + "</td></tr>";
+  }).join("");
+  return '<div class="histbox" id="hist-' + g.id + '"><table><tr><th>DATE</th><th>PRICE</th><th>CHANGE</th><th>NOTES</th></tr>' + rows + "</table></div>";
+}
+
+function cardHTML(g){
+  const sale = onSale(g);
+  const pct = sale ? Math.round((1 - g.price / g.regularPrice) * 100) : 0;
+  let endsTxt = "";
+  if(sale && g.saleEnds){
+    const d = daysUntil(g.saleEnds);
+    endsTxt = "Ends " + fmtDateShort(g.saleEnds) + (d >= 0 && d <= 14 ? " (" + (d === 0 ? "today" : d + "d left") + ")" : "");
+  }
+  const tags = [g.platform].concat(g.tags || []).map((t,i) =>
+    '<span class="pb' + (i === 0 ? ' platform' : '') + '">' + esc(t) + '</span>').join("");
+  const s = g.specs || {};
+  const storeBtn = g.storeUrl ? '<a class="a-btn" href="' + esc(g.storeUrl) + '" target="_blank" rel="noopener">' + esc(g.store || "Store") + '</a>' : "";
+  return '<article class="card" data-platform="' + esc(g.platform) + '" data-sale="' + (sale ? "1" : "0") + '">' +
+    '<div class="banner" id="banner-' + g.id + '">' +
+      '<img src="' + esc(g.banner) + '" alt="' + esc(g.title) + ' banner art"' + (g.bannerPosition ? ' style="object-position:' + esc(g.bannerPosition) + '"' : '') + '>' +
+      '<div class="scrim"></div>' +
+      (sale ? '<div class="salebadge">ON SALE −' + pct + '%</div>' : '') +
+      '<button class="playbtn" data-trailer="' + esc(g.trailer || "") + '" data-card="' + g.id + '" aria-label="Play trailer"><i></i></button>' +
+      '<div class="gtitle">' + esc(g.title) + '</div>' +
+    '</div>' +
+    '<div class="body">' +
+      '<div class="titlerow"><img class="thumb" src="' + esc(g.boxart) + '" alt="' + esc(g.title) + ' box art"><div class="plat">' + tags + '</div></div>' +
+      '<div class="price-row"><span class="price' + (g.price === 0 ? ' free' : '') + '">' + money(g.price) + '</span>' +
+      (sale ? '<span class="was">' + money(g.regularPrice) + '</span><span class="ends">' + esc(endsTxt) + '</span>' : '') + '</div>' +
+      '<div class="specs">' +
+        '<div class="spec"><div class="k">FILE SIZE</div><div class="v">' + esc(s.size || "—") + '</div></div>' +
+        '<div class="spec"><div class="k">PLAYERS</div><div class="v">' + esc(s.players || "—") + '</div></div>' +
+        '<div class="spec"><div class="k">GENRE</div><div class="v">' + esc(s.genre || "—") + '</div></div>' +
+        '<div class="spec"><div class="k">' + esc(s.extraLabel || "PUBLISHER") + '</div><div class="v">' + esc(s.extra || "—") + '</div></div>' +
+      '</div>' +
+      (g.alertNote ? '<div class="alert">' + esc(g.alertNote) + '</div>' : '') +
+      '<div class="meta">' + esc(g.description || "") + '</div>' +
+      sparkline(g) +
+      '<div class="actions">' +
+        '<button class="a-btn primary" data-trailer="' + esc(g.trailer || "") + '" data-card="' + g.id + '">Watch trailer</button>' +
+        '<button class="a-btn" data-hist="' + g.id + '">Price history</button>' +
+        storeBtn +
+      '</div>' +
+      historyRows(g) +
+    '</div></article>';
+}
+
+function statsHTML(){
+  const tracked = GAMES.length;
+  const sales = GAMES.filter(onSale).length;
+  const saved = GAMES.reduce((a,g) => a + (onSale(g) ? g.regularPrice - g.price : 0), 0);
+  const gb = GAMES.reduce((a,g) => a + ((g.specs && g.specs.sizeGB) || 0), 0);
+  return '<div class="stat"><div class="n">' + tracked + '</div><div class="l">games tracked</div></div>' +
+    '<div class="stat"><div class="n">' + sales + '</div><div class="l">on sale right now</div></div>' +
+    '<div class="stat"><div class="n">$' + saved.toFixed(2) + '</div><div class="l">saved vs. full price</div></div>' +
+    '<div class="stat"><div class="n">' + Math.round(gb) + ' GB</div><div class="l">total download size</div></div>' +
+    '<div class="stat"><div class="n">' + queue.length + '</div><div class="l">queued for Aria</div></div>';
+}
+
+function queuedHTML(q, idx){
+  return '<div class="queued-card"><span class="q-badge">QUEUED</span>' +
+    '<div class="qt">' + esc(q.name) + ' — ' + esc(q.platform) + '</div>' +
+    '<div class="meta">Waiting on Aria: banner, box art, specs, trailer, store link, and price tracking.</div>' +
+    '<button class="q-remove" data-remove="' + idx + '">Remove from queue</button></div>';
+}
+
+function render(){
+  const grid = $("#grid");
+  const visible = GAMES.filter(g => FILTER === "all" || (FILTER === "sale" ? onSale(g) : g.platform === FILTER));
+  let html = visible.map(cardHTML).join("");
+  if(FILTER === "all") html += queue.map(queuedHTML).join("");
+  grid.innerHTML = html || '<div class="err">No games match this filter yet.</div>';
+  $("#stats").innerHTML = statsHTML();
+  const bar = $("#queuebar");
+  if(queue.length){
+    bar.className = "queuebar show";
+    bar.innerHTML = '<span class="qt2">' + queue.length + ' game' + (queue.length > 1 ? 's' : '') + ' in your queue. Send it to Aria and the finished cards replace these placeholders on the next update.</span>' +
+      '<button class="btn" id="q-send">Send queue to Aria</button>' +
+      '<button class="btn secondary" id="q-clear">Clear queue</button>';
+    $("#q-send").addEventListener("click", sendQueue);
+    $("#q-clear").addEventListener("click", () => { queue = []; saveQueue(); render(); });
+  } else {
+    bar.className = "queuebar"; bar.innerHTML = "";
+  }
+  document.querySelectorAll("[data-trailer]").forEach(b => b.addEventListener("click", () => playTrailer(b)));
+  document.querySelectorAll("[data-hist]").forEach(b => b.addEventListener("click", () => {
+    const box = document.getElementById("hist-" + b.getAttribute("data-hist"));
+    if(box) box.classList.toggle("open");
+  }));
+  document.querySelectorAll("[data-remove]").forEach(b => b.addEventListener("click", () => {
+    queue.splice(Number(b.getAttribute("data-remove")), 1); saveQueue(); render();
+  }));
+}
+
+function playTrailer(btn){
+  const id = btn.getAttribute("data-trailer");
+  const card = btn.getAttribute("data-card");
+  if(!id) return;
+  const banner = document.getElementById("banner-" + card);
+  if(!banner) return;
+  banner.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0" title="Trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+}
+
+function saveQueue(){ try { localStorage.setItem(QKEY, JSON.stringify(queue)); } catch(e){} }
+
+function sendQueue(){
+  const lines = queue.map(q => "- " + q.name + " (" + q.platform + ")").join("\n");
+  const title = encodeURIComponent("Backlog queue: " + queue.length + " game" + (queue.length > 1 ? "s" : "") + " to add");
+  const body = encodeURIComponent("Hi Aria — please add these to The Backlog with full cards (art, trailer, specs, price tracking):\n\n" + lines);
+  window.open(REPO_ISSUES + "?title=" + title + "&body=" + body, "_blank");
+}
+
+function setFilter(f){
+  FILTER = f;
+  document.querySelectorAll("#chips .chip").forEach(c => c.classList.toggle("on", c.getAttribute("data-filter") === f));
+  document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("on", a.getAttribute("data-filter") === f));
+  render();
+}
+document.querySelectorAll("#chips .chip").forEach(c => c.addEventListener("click", () => setFilter(c.getAttribute("data-filter"))));
+document.querySelectorAll("#topnav a").forEach(a => a.addEventListener("click", () => setFilter(a.getAttribute("data-filter"))));
+
+$("#q-add").addEventListener("click", () => {
+  const name = $("#q-name").value.trim();
+  if(!name) { $("#q-name").focus(); return; }
+  queue.push({ name: name, platform: $("#q-platform").value });
+  $("#q-name").value = "";
+  saveQueue();
+  setFilter("all");
+});
+$("#q-name").addEventListener("keydown", e => { if(e.key === "Enter") $("#q-add").click(); });
+
+fetch("games.json?ts=" + Date.now())
+  .then(r => { if(!r.ok) throw new Error("games.json " + r.status); return r.json(); })
+  .then(data => {
+    GAMES = data.games || [];
+    $("#updated").textContent = "Last updated " + fmtDate(data.updated) + " · " + GAMES.length + " games tracked";
+    render();
+  })
+  .catch(err => {
+    $("#grid").innerHTML = '<div class="err">Could not load the game list (' + esc(err.message) + '). Try refreshing in a minute.</div>';
+  });
+</script>
+</body>
+</html>
