@@ -78,14 +78,14 @@
   .cal-nav{background:var(--surface2);border:1px solid var(--border);color:var(--text);width:32px;height:32px;border-radius:8px;font-size:18px;cursor:pointer}
   .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
   .cal-dow{text-align:center;font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.6px;padding:2px 0}
-  .cal-day{min-height:64px;background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:5px 6px;font-size:12px}
+  .cal-day{height:74px;overflow:hidden;background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:5px 6px;font-size:12px}
   .cal-day.empty{background:transparent;border:none}
   .cal-day.today{border-color:var(--accent)}
   .cal-day.has{cursor:pointer}
   .cal-day.has:not(.past){border-color:rgba(91,140,255,.55)}
   .cal-num{font-weight:700;font-size:12px;color:var(--muted)}
   .cal-day.today .cal-num{color:var(--accent)}
-  .cal-ev{font-size:10.5px;font-weight:700;line-height:1.25;margin-top:3px;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cal-ev{font-size:10px;font-weight:700;line-height:1.25;margin-top:3px;color:var(--text);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
   .cal-day.past .cal-ev{color:var(--muted)}
   .cal-more{font-size:10px;color:var(--muted);margin-top:2px}
   .cal-detail{margin-top:10px}
@@ -100,7 +100,7 @@
   .cal-up-item span{font-size:12px;color:var(--muted)}
   .cal-tba{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5}
   .cal-note{font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.5}
-  @media (max-width:560px){ .cal-day{min-height:52px;padding:4px} .cal-ev{font-size:9.5px} }
+  @media (max-width:560px){ .cal-day{height:60px;padding:4px} .cal-ev{font-size:9.5px} }
   .hltb{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
   .hltb-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
   .hltb-head .t{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--muted)}
@@ -321,8 +321,8 @@ function renderCalendar(){
     const gs = map[iso] || [];
     cells += '<div class="cal-day' + (iso===todayISO ? ' today' : '') + (gs.length ? ' has' + (iso < todayISO ? ' past' : '') : '') + '"' + (gs.length ? ' data-calday="' + iso + '"' : '') + '>' +
       '<div class="cal-num">' + d + '</div>' +
-      gs.slice(0,2).map(g => '<div class="cal-ev">' + esc(g.title) + '</div>').join("") +
-      (gs.length > 2 ? '<div class="cal-more">+' + (gs.length-2) + ' more</div>' : '') +
+      gs.slice(0,1).map(g => '<div class="cal-ev">' + esc(g.title) + '</div>').join("") +
+      (gs.length > 1 ? '<div class="cal-more">+' + (gs.length-1) + ' more</div>' : '') +
       '</div>';
   }
   const upcoming = GAMES.filter(g => g.releaseDate && /^\d{4}-\d{2}-\d{2}$/.test(g.releaseDate) && g.releaseDate >= todayISO)
@@ -392,13 +392,43 @@ function initShots(){
   });
 }
 
+let ytApiPromise = null;
+function loadYT(){
+  if(ytApiPromise) return ytApiPromise;
+  ytApiPromise = new Promise(res => {
+    if(window.YT && YT.Player) return res();
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => { if(prev) prev(); res(); };
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+  });
+  return ytApiPromise;
+}
+
 function playTrailer(btn){
   const id = btn.getAttribute("data-trailer");
   const card = btn.getAttribute("data-card");
   if(!id) return;
   const banner = document.getElementById("banner-" + card);
   if(!banner) return;
-  banner.innerHTML = '<iframe src="https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&playsinline=1&rel=0" title="Trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  banner.scrollIntoView({ behavior: "smooth", block: "center" });
+  const plainEmbed = '<iframe src="https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&playsinline=1&rel=0" title="Trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  banner.innerHTML = '<div id="yt-' + card + '" style="position:absolute;inset:0"></div>';
+  let started = false;
+  const fallback = setTimeout(() => { if(!started) banner.innerHTML = plainEmbed; }, 3500);
+  loadYT().then(() => {
+    if(started) return;
+    started = true;
+    clearTimeout(fallback);
+    new YT.Player("yt-" + card, {
+      videoId: id,
+      width: "100%",
+      height: "100%",
+      playerVars: { autoplay: 1, playsinline: 1, rel: 0 },
+      events: { onReady: e => { try { e.target.playVideo(); } catch(err){} } }
+    });
+  }).catch(() => { if(!started){ started = true; clearTimeout(fallback); banner.innerHTML = plainEmbed; } });
 }
 
 function setFilter(f){
