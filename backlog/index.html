@@ -29,6 +29,14 @@
   .banner{height:158px;position:relative;overflow:hidden;background:#10141a;flex:none}
   .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .banner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .shotswrap{position:relative;flex:none;background:#0b0e13}
+  .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .shots::-webkit-scrollbar{display:none}
+  .shots .shot{flex:0 0 100%;scroll-snap-align:start}
+  .shots .shot img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+  .shotdots{display:flex;gap:5px;justify-content:center;padding:7px 0 8px}
+  .shotdots i{width:6px;height:6px;border-radius:50%;background:var(--border)}
+  .shotdots i.on{background:var(--accent)}
   .banner .scrim{position:absolute;left:0;right:0;bottom:0;height:60%;background:linear-gradient(transparent,rgba(0,0,0,.8))}
   .salebadge{position:absolute;top:10px;left:10px;z-index:2;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:4px 9px;border-radius:6px;letter-spacing:.3px}
   .playbtn{position:absolute;top:10px;right:10px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.55);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
@@ -217,6 +225,7 @@ function cardHTML(g){
       (hasTrailer ? '<button class="playbtn" data-trailer="' + esc(g.trailer) + '" data-card="' + g.id + '" aria-label="Play trailer"><i></i></button>' : '') +
       '<div class="gtitle">' + esc(g.title) + '</div>' +
     '</div>' +
+    shotsBlock(g) +
     '<div class="body">' +
       '<div class="titlerow"><img class="thumb" src="' + esc(g.boxart) + '" alt="' + esc(g.title) + ' box art"><div class="plat">' + tags + '</div></div>' +
       priceBlock +
@@ -238,6 +247,15 @@ function cardHTML(g){
       '</div>' +
       historyRows(g) +
     '</div></article>';
+}
+
+function shotsBlock(g){
+  const shots = (g.screenshots || []).filter(Boolean);
+  if(!shots.length) return "";
+  const slides = shots.map(u => '<div class="shot"><img loading="lazy" src="' + esc(u) + '" alt="' + esc(g.title) + ' screenshot"></div>').join("");
+  const dots = shots.map((_,i) => '<i' + (i === 0 ? ' class="on"' : '') + '></i>').join("");
+  return '<div class="shotswrap"><div class="shots" data-shots="' + g.id + '">' + slides + '</div>' +
+    (shots.length > 1 ? '<div class="shotdots">' + dots + '</div>' : '') + '</div>';
 }
 
 function fmtHours(v){
@@ -335,6 +353,43 @@ function render(){
     const box = document.getElementById("hist-" + b.getAttribute("data-hist"));
     if(box) box.classList.toggle("open");
   }));
+  initShots();
+}
+
+let shotTimers = [];
+let shotsObs = null;
+function initShots(){
+  shotTimers.forEach(t => clearInterval(t)); shotTimers = [];
+  if(shotsObs) shotsObs.disconnect();
+  const reduce = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  shotsObs = ("IntersectionObserver" in window) ? new IntersectionObserver(es => es.forEach(e => { e.target._vis = e.isIntersecting; }), { threshold: 0.35 }) : null;
+  document.querySelectorAll(".shots").forEach(strip => {
+    const wrap = strip.parentElement;
+    const dots = wrap ? wrap.querySelectorAll(".shotdots i") : [];
+    const n = strip.children.length;
+    if(n < 2) return;
+    let idx = 0, holdUntil = 0;
+    const setDots = () => dots.forEach((d,i) => d.classList.toggle("on", i === idx));
+    strip.addEventListener("scroll", () => {
+      const w = strip.clientWidth || 1;
+      const i = Math.max(0, Math.min(n - 1, Math.round(strip.scrollLeft / w)));
+      if(i !== idx){ idx = i; setDots(); }
+    }, { passive: true });
+    strip.addEventListener("pointerdown", () => { holdUntil = Date.now() + 6000; }, { passive: true });
+    strip.addEventListener("touchstart", () => { holdUntil = Date.now() + 6000; }, { passive: true });
+    strip._vis = !shotsObs;
+    if(shotsObs) shotsObs.observe(strip);
+    if(reduce) return;
+    const timer = setInterval(() => {
+      if(!strip.isConnected){ clearInterval(timer); return; }
+      if(!strip._vis) return;
+      if(Date.now() < holdUntil) return;
+      idx = (idx + 1) % n;
+      strip.scrollTo({ left: idx * strip.clientWidth, behavior: "smooth" });
+      setDots();
+    }, 3000);
+    shotTimers.push(timer);
+  });
 }
 
 function playTrailer(btn){
@@ -343,7 +398,7 @@ function playTrailer(btn){
   if(!id) return;
   const banner = document.getElementById("banner-" + card);
   if(!banner) return;
-  banner.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0" title="Trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  banner.innerHTML = '<iframe src="https://www.youtube.com/embed/' + encodeURIComponent(id) + '?autoplay=1&playsinline=1&rel=0" title="Trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
 }
 
 function setFilter(f){
