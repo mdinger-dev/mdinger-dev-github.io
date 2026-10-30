@@ -1,19 +1,51 @@
 <!DOCTYPE html>
+<!--
+  ============================================================================
+  THE WISHLIST — Mike's game wishlist site
+  ============================================================================
+  This is a single-file static web page (hosted on GitHub Pages). It shows
+  the games Mike wants to pick up: unreleased ones he's tracking and released
+  ones he's watching for a sale.
+
+  HOW IT WORKS:
+  - All the game data lives in a separate file, games.json (same folder).
+    This page downloads games.json when it loads and builds everything
+    you see — cards, calendar, prices — from that data, in the browser.
+  - Aria (Mike's assistant) updates games.json once a day (prices, sale
+    dates, new releases, screenshots) and pushes it to this repo. The page
+    itself rarely changes; the DATA is what changes.
+  - There is no server and no database: if you can read this file and
+    games.json, you can see everything the site knows.
+
+  STRUCTURE OF THIS FILE:
+  1. The HEAD section — page title + all the CSS (the visual styling)
+  2. The BODY section — the fixed HTML skeleton (header, filter chips, and
+     empty containers that the script fills in)
+  3. The SCRIPT section (bottom) — the JavaScript that loads games.json
+     and renders the page
+  ============================================================================
+-->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- viewport: makes the page lay out at phone width on mobile instead of zoomed-out desktop width -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Wishlist — Games Mike Wants to Pick Up</title>
 <meta name="description" content="Mike's game wishlist: games that aren't out yet, games he's watching for a sale, current prices, and price history across Switch 2, iPhone, and PS5.">
 <style>
+  /* ===== Color theme =====
+     CSS variables: define the palette once here, use var(--name) everywhere
+     else, so recoloring the site means editing only these lines. */
   :root{
     --bg:#0e1116; --surface:#161b22; --surface2:#1c232d; --border:#2a333f;
     --text:#e9eef4; --muted:#97a5b4; --accent:#5b8cff; --accent-ink:#fff;
     --red:#e5484d; --green:#3fb950; --shadow:rgba(0,0,0,.45);
   }
+  /* ===== Base layout ===== */
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
   .wrap{max-width:1120px;margin:0 auto;padding:0 16px 40px}
+  /* ===== Header: site logo + top navigation links ===== */
   header.site{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:20px 0 14px;border-bottom:1px solid var(--border)}
   .logo{font-size:24px;font-weight:800;letter-spacing:.2px}
   .logo span{color:var(--accent)}
@@ -21,14 +53,22 @@
   nav.top a{color:var(--muted);text-decoration:none;cursor:pointer}
   nav.top a.on{color:var(--text);font-weight:700}
   .tagline{color:var(--muted);font-size:13.5px;margin:12px 0 0}
+  /* ===== Filter chips (All games / Switch 2 / iPhone / PS5 / On sale now) ===== */
   .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
   .chip{font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer}
   .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+  /* ===== Game card grid and the card frame ===== */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px var(--shadow);display:flex;flex-direction:column}
+  /* Card banner: the wide artwork at the top of each card. The trailer
+     iframe also lives here — playing a trailer swaps the art for the video. */
   .banner{height:158px;position:relative;overflow:hidden;background:#10141a;flex:none}
   .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .banner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  /* ===== Screenshot carousel (sits below the price on each card) =====
+     .shots is a horizontally scrollable strip with scroll-snap, so each
+     swipe lands exactly on the next screenshot. The scrollbar is hidden;
+     the dots underneath show which screenshot you're on. */
   .shotswrap{position:relative;flex:none;background:#0b0e13;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin:10px 0 2px}
   .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .shots::-webkit-scrollbar{display:none}
@@ -37,32 +77,41 @@
   .shotdots{display:flex;gap:5px;justify-content:center;padding:7px 0 8px}
   .shotdots i{width:6px;height:6px;border-radius:50%;background:var(--border)}
   .shotdots i.on{background:var(--accent)}
+  /* Pieces layered ON the banner: dark gradient at the bottom so the title
+     stays readable, the red ON SALE badge, the round play button, and the
+     game title itself. */
   .banner .scrim{position:absolute;left:0;right:0;bottom:0;height:60%;background:linear-gradient(transparent,rgba(0,0,0,.8))}
   .salebadge{position:absolute;top:10px;left:10px;z-index:2;background:var(--red);color:#fff;font-size:11.5px;font-weight:800;padding:4px 9px;border-radius:6px;letter-spacing:.3px}
   .playbtn{position:absolute;top:10px;right:10px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.55);border:none;display:flex;align-items:center;justify-content:center;cursor:pointer}
   .playbtn i{width:0;height:0;border-left:10px solid #fff;border-top:6.5px solid transparent;border-bottom:6.5px solid transparent;margin-left:2px}
   .gtitle{position:absolute;left:12px;right:12px;bottom:9px;z-index:2;font-size:17.5px;font-weight:800;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6);line-height:1.2}
+  /* ===== Card body: everything under the banner ===== */
   .body{padding:12px;display:flex;flex-direction:column;gap:9px;flex:1}
+  /* Row with the small box-art thumbnail + platform tags (Switch 2, Digital, ESRB…) */
   .titlerow{display:flex;gap:10px;align-items:flex-start}
   .thumb{width:46px;height:58px;border-radius:6px;object-fit:cover;border:1px solid var(--border);flex:none}
   .plat{display:flex;gap:6px;flex-wrap:wrap}
   .pb{font-size:11px;font-weight:700;padding:3px 8px;border-radius:999px;border:1px solid var(--border);color:var(--muted)}
   .pb.platform{color:var(--text);border-color:var(--accent)}
+  /* Price line: current price, struck-through regular price, sale end date */
   .price-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
   .price{font-size:22px;font-weight:800}
   .price.free{color:var(--green)}
   .was{font-size:13.5px;color:var(--muted);text-decoration:line-through}
   .ends{font-size:12.5px;font-weight:700;color:var(--red)}
+  /* Spec grid: release date / file size / players / genre / publisher */
   .specs{display:grid;grid-template-columns:1fr 1fr;gap:7px 10px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
   .spec .k{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--muted)}
   .spec .v{font-size:12.5px;font-weight:600;margin-top:1px}
   .meta{font-size:13px;color:var(--muted);line-height:1.5}
   .meta b{color:var(--text)}
   .alert{font-size:12.5px;line-height:1.45;background:rgba(91,140,255,.1);border:1px solid rgba(91,140,255,.35);border-radius:10px;padding:8px 10px;color:var(--text)}
+  /* Price-history sparkline (the tiny line chart) + card action buttons */
   .spark{width:100%;height:26px}
   .actions{display:flex;gap:8px;margin-top:auto;flex-wrap:wrap}
   .a-btn{flex:1;text-align:center;font-size:13px;font-weight:700;padding:9px 6px;border-radius:9px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;text-decoration:none;white-space:nowrap}
   .a-btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+  /* Expandable price-history table (hidden until "Price history" is tapped) */
   .histbox{display:none;border-top:1px solid var(--border);padding-top:10px}
   .histbox.open{display:block}
   .histbox table{width:100%;border-collapse:collapse;font-size:12.5px}
@@ -72,6 +121,10 @@
   .down{color:var(--green);font-weight:700}
   footer{margin-top:26px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.6}
   .err{background:rgba(229,72,77,.12);border:1px solid var(--red);border-radius:10px;padding:12px 14px;font-size:14px}
+  /* ===== Release calendar (the panel at the top of the page) =====
+     Every day cell is a fixed height so days with a game on them are the
+     same size as empty days; a day shows at most one game title, and
+     tapping the day opens the detail list underneath the grid. */
   .calwrap{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px}
   .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
   .cal-title{font-size:16px;font-weight:800}
@@ -100,7 +153,9 @@
   .cal-up-item span{font-size:12px;color:var(--muted)}
   .cal-tba{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5}
   .cal-note{font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+  /* On narrow phone screens the calendar cells shrink a bit to fit */
   @media (max-width:560px){ .cal-day{height:60px;padding:4px} .cal-ev{font-size:9.5px} }
+  /* ===== "How Long To Beat" block on cards that have playtime data ===== */
   .hltb{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
   .hltb-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
   .hltb-head .t{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--muted)}
@@ -111,7 +166,11 @@
 </style>
 </head>
 <body>
+<!-- Page skeleton: these containers start out empty. The script at the
+     bottom of this file fills them in from games.json. -->
 <div class="wrap">
+  <!-- Header: logo + top nav. The nav links carry data-filter values that
+       the script uses to filter the card grid. -->
   <header class="site">
     <div class="logo">The <span>Wishlist</span></div>
     <nav class="top" id="topnav">
@@ -124,6 +183,8 @@
   </header>
   <p class="tagline">Games Mike wants to pick up — ones that aren't out yet, ones he's watching for a sale — all in one place, with current prices, sale end dates, and price history.</p>
 
+  <!-- Filter chips: same filters as the top nav, in button form.
+       Clicking either set calls setFilter() in the script. -->
   <div class="chips" id="chips">
     <div class="chip on" data-filter="all">All games</div>
     <div class="chip" data-filter="Switch 2">Switch 2</div>
@@ -132,45 +193,77 @@
     <div class="chip" data-filter="sale">On sale now</div>
   </div>
 
+  <!-- The release calendar is rendered into this empty section by renderCalendar() -->
   <section class="calwrap" id="calwrap"></section>
 
+  <!-- The game cards are rendered into this empty grid by render() -->
   <div class="grid" id="grid"></div>
 
+  <!-- Footer; the script fills #updated with the games.json "updated" date + game count -->
   <footer>
     Prices and sale dates checked by Aria — sale alerts land in chat with the end date.<br>
     <span id="updated"></span>
   </footer>
 </div>
 <script>
+/* ==========================================================================
+   THE WISHLIST — page logic
+   Flow: fetch games.json -> store the games in GAMES -> render() builds the
+   calendar and one card per game -> buttons/filters/carousels get wired up.
+   Every render is a rebuild: when the filter changes we regenerate the HTML
+   from the data rather than hiding/showing DOM nodes by hand.
+   ========================================================================== */
+
+// GAMES: every game object from games.json (title, price, art, specs, …).
+// FILTER: which subset is on screen — "all", "sale", or a platform name.
 let GAMES = [], FILTER = "all";
 
+// $ is a shorthand for "find the first element matching this CSS selector".
 const $ = s => document.querySelector(s);
+// esc() makes text safe to drop into HTML: it replaces characters like < and &
+// so a game title or note can never break the markup (or inject markup).
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+// money() formats a price: null (not priced yet) -> "—", 0 -> "Free", else "$12.34".
 const money = n => (n === null || n === undefined ? "—" : (n === 0 ? "Free" : "$" + Number(n).toFixed(2)));
+// fmtDate("2026-11-05") -> "Nov 5, 2026". Parses by hand (not new Date()) so
+// timezones can never shift the day.
 function fmtDate(iso){
   if(!iso) return "";
   const p = iso.split("-").map(Number);
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   return months[p[1]-1] + " " + p[2] + ", " + p[0];
 }
+// fmtDateShort("2026-11-05") -> "Nov 5" (no year; used in small spaces).
 function fmtDateShort(iso){
   const p = iso.split("-").map(Number);
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   return months[p[1]-1] + " " + p[2];
 }
+// fmtRelease() handles the three shapes a releaseDate can take in games.json:
+// a full date ("2026-11-05") -> "Nov 5, 2026"; a bare year ("2027") -> shown
+// as-is; missing -> "TBA".
 function fmtRelease(r){
   if(!r) return "TBA";
   if(/^\d{4}-\d{2}-\d{2}$/.test(r)) return fmtDateShort(r) + ", " + r.slice(0, 4);
   return r;
 }
+// daysUntil("2026-11-05") -> whole days from today (0 = today, negative = past).
+// Used for "in N days" countdowns and "(3d left)" sale labels.
 function daysUntil(iso){
   const now = new Date(); now.setHours(0,0,0,0);
   const p = iso.split("-").map(Number);
   const d = new Date(p[0], p[1]-1, p[2]);
   return Math.round((d - now) / 86400000);
 }
+// onSale(): a game is on sale when it has a real regular price and the
+// current price is below it. (Free games have price 0 and regularPrice 0,
+// so they don't count as "on sale".)
 const onSale = g => g.regularPrice > 0 && g.price < g.regularPrice;
 
+// sparkline(): draws the tiny price-history line chart on a card as an SVG.
+// It maps each recorded price to an x (position in time) and a y (height,
+// cheapest at the bottom), then connects the dots. Green while on sale,
+// dashed when the price has never moved.
 function sparkline(g){
   const h = (g.history || []).filter(x => x.price !== null && x.price !== undefined);
   if(h.length < 2) return "";
@@ -185,6 +278,9 @@ function sparkline(g){
   return '<svg class="spark" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none"><polyline points="' + pts + '" fill="none" stroke="' + color + '" stroke-width="2.5"' + (flat ? ' stroke-dasharray="5 4"' : '') + '/></svg>';
 }
 
+// historyRows(): builds the hidden price-history table inside a card
+// (newest first). The CHANGE column compares each entry to the one before
+// it and shows the % drop/rise. Toggled open by the "Price history" button.
 function historyRows(g){
   const rows = (g.history || []).slice().reverse().map((h,i,arr) => {
     const next = arr[i+1];
@@ -198,7 +294,13 @@ function historyRows(g){
   return '<div class="histbox" id="hist-' + g.id + '"><table><tr><th>DATE</th><th>PRICE</th><th>CHANGE</th><th>NOTES</th></tr>' + rows + "</table></div>";
 }
 
+// cardHTML(): builds one game's card as an HTML string. Layout, top to bottom:
+// banner art (with SALE badge + trailer play button + title over it), box art
+// + platform tags, price, screenshot carousel, spec grid, How Long To Beat
+// block, note/description, price sparkline, action buttons, and the hidden
+// price-history table. render() joins these strings for all visible games.
 function cardHTML(g){
+  // Pre-compute the pieces that need logic before assembling the string:
   const sale = onSale(g);
   const pct = sale ? Math.round((1 - g.price / g.regularPrice) * 100) : 0;
   let endsTxt = "";
@@ -206,11 +308,14 @@ function cardHTML(g){
     const d = daysUntil(g.saleEnds);
     endsTxt = "Ends " + fmtDateShort(g.saleEnds) + (d >= 0 && d <= 14 ? " (" + (d === 0 ? "today" : d + "d left") + ")" : "");
   }
+  // The first tag is the platform and gets highlighted styling.
   const tags = [g.platform].concat(g.tags || []).map((t,i) =>
     '<span class="pb' + (i === 0 ? ' platform' : '') + '">' + esc(t) + '</span>').join("");
   const s = g.specs || {};
   const storeBtn = g.storeUrl ? '<a class="a-btn" href="' + esc(g.storeUrl) + '" target="_blank" rel="noopener">' + esc(g.store || "Store") + '</a>' : "";
   const hasTrailer = !!g.trailer;
+  // Unreleased games have price null: show their statusNote ("Coming soon"…)
+  // in place of a price instead of a dollar amount.
   const unpriced = (g.price === null || g.price === undefined);
   const priceBlock = unpriced
     ? '<div class="price-row"><span class="price" style="font-size:17px">' + esc(g.statusNote || "Not yet priced") + '</span></div>'
@@ -249,6 +354,10 @@ function cardHTML(g){
     '</div></article>';
 }
 
+// shotsBlock(): builds the screenshot carousel for a card — a swipeable
+// strip of images plus the position dots. Returns "" when the game has no
+// screenshots, so the card simply has no carousel. The auto-advance and dot
+// syncing are set up later by initShots().
 function shotsBlock(g){
   const shots = (g.screenshots || []).filter(Boolean);
   if(!shots.length) return "";
@@ -258,6 +367,8 @@ function shotsBlock(g){
     (shots.length > 1 ? '<div class="shotdots">' + dots + '</div>' : '') + '</div>';
 }
 
+// fmtHours(): formats a HowLongToBeat time, rounded to the nearest half
+// hour: 12.4 -> "12½ hrs", 1 -> "1 hr". null (unknown) -> "—".
 function fmtHours(v){
   if(v === null || v === undefined) return "—";
   const r = Math.round(v * 2) / 2;
@@ -266,6 +377,9 @@ function fmtHours(v){
   const num = ((whole ? String(whole) : "") + frac) || "0";
   return num + (r === 1 ? " hr" : " hrs");
 }
+// hltbBlock(): builds the "How Long To Beat" box (Main Story / Main + Extras
+// / Completionist) shown on cards whose games.json entry has an "hltb"
+// object. Games without one (unreleased games, some collections) get "".
 function hltbBlock(g){
   const h = g.hltb;
   if(!h || (h.main == null && h.mainExtra == null && h.completionist == null)) return "";
@@ -278,8 +392,14 @@ function hltbBlock(g){
     '</div></div>';
 }
 
+/* ===== Release calendar =====
+   calY/calM remember which month is on screen so the ‹ › buttons can move
+   through months. The calendar is rebuilt from scratch on every render. */
 let calY, calM;
+// isoOf(date) -> "2026-11-05" style string, the same format games.json uses.
 function isoOf(d){ return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); }
+// relMap(): groups games by release date -> { "2026-11-05": [game, game], … }.
+// Only full ISO dates count; year-only/TBA games can't sit on a calendar day.
 function relMap(){
   const map = {};
   GAMES.forEach(g => {
@@ -289,11 +409,15 @@ function relMap(){
   });
   return map;
 }
+// gotoGame(): used by calendar links — clears any filter (so the card is
+// guaranteed visible) and smooth-scrolls to that game's banner.
 function gotoGame(id){
   setFilter("all");
   const el = document.getElementById("banner-" + id);
   if(el) el.scrollIntoView({behavior:"smooth", block:"center"});
 }
+// showCalDay(): fills the detail area under the calendar grid with the
+// games releasing on the tapped day, each with a "View card" jump link.
 function showCalDay(iso, map){
   const gs = map[iso] || [];
   const det = $("#cal-detail");
@@ -302,6 +426,11 @@ function showCalDay(iso, map){
     '<div class="cal-detail-row"><b>' + esc(g.title) + '</b><span>' + esc(g.platform) + (g.releaseTime ? ' · unlocks ' + esc(g.releaseTime) : '') + '</span><button class="cal-link" data-goto="' + g.id + '">View card</button></div>').join("");
   det.querySelectorAll("[data-goto]").forEach(b => b.addEventListener("click", () => gotoGame(b.getAttribute("data-goto"))));
 }
+// renderCalendar(): draws the whole calendar panel — month grid (fixed-
+// height day cells, today ringed, up to one title per day), the detail area,
+// the "COMING UP" list (next 6 dated releases with countdowns), the
+// "No exact date yet" line for year-only/TBA games, and the unlock-time note.
+// It also wires the ‹ › month buttons and day taps after drawing.
 function renderCalendar(){
   const el = $("#calwrap");
   if(!el) return;
@@ -313,6 +442,8 @@ function renderCalendar(){
   const dim = new Date(calY, calM+1, 0).getDate();
   const monthName = first.toLocaleString("en-US", {month:"long", year:"numeric"});
   const todayISO = isoOf(now);
+  // Build the grid: weekday headers, blank cells before the 1st, then one
+  // fixed-height cell per day (title shown only for the first game that day).
   let cells = "";
   ["Su","Mo","Tu","We","Th","Fr","Sa"].forEach(d => cells += '<div class="cal-dow">' + d + '</div>');
   for(let i=0;i<startDay;i++) cells += '<div class="cal-day empty"></div>';
@@ -325,12 +456,14 @@ function renderCalendar(){
       (gs.length > 1 ? '<div class="cal-more">+' + (gs.length-1) + ' more</div>' : '') +
       '</div>';
   }
+  // "COMING UP": the next 6 games with exact future release dates, soonest first.
   const upcoming = GAMES.filter(g => g.releaseDate && /^\d{4}-\d{2}-\d{2}$/.test(g.releaseDate) && g.releaseDate >= todayISO)
     .sort((a,b) => a.releaseDate < b.releaseDate ? -1 : 1).slice(0,6);
   const upHTML = upcoming.length ? '<div class="cal-up"><div class="cal-up-h">COMING UP</div>' + upcoming.map(g => {
       const du = daysUntil(g.releaseDate);
       return '<button class="cal-up-item" data-goto="' + g.id + '"><b>' + esc(g.title) + '</b><span>' + esc(fmtDateShort(g.releaseDate)) + (g.releaseTime ? ' · ' + esc(g.releaseTime) : '') + ' · ' + (du===0 ? 'releases today!' : du===1 ? 'tomorrow' : 'in ' + du + ' days') + ' · ' + esc(g.platform) + '</span></button>';
     }).join("") + '</div>' : "";
+  // Games with only a year or no date can't go on the grid; list them in one line.
   const tba = GAMES.filter(g => !g.releaseDate || !/^\d{4}-\d{2}-\d{2}$/.test(g.releaseDate));
   const tbaHTML = tba.length ? '<div class="cal-tba">No exact date yet: ' + tba.map(g => esc(g.title) + (g.releaseDate ? ' (' + esc(g.releaseDate) + ')' : ' (TBA)')).join(" · ") + '</div>' : "";
   el.innerHTML = '<div class="cal-head"><button class="cal-nav" id="cal-prev" aria-label="Previous month">‹</button><div class="cal-title">📅 Release calendar — ' + esc(monthName) + '</div><button class="cal-nav" id="cal-next" aria-label="Next month">›</button></div>' +
@@ -343,6 +476,11 @@ function renderCalendar(){
   el.querySelectorAll("[data-goto]").forEach(b => b.addEventListener("click", () => gotoGame(b.getAttribute("data-goto"))));
 }
 
+// render(): the main draw routine. Filters GAMES by the current FILTER,
+// rebuilds the card grid and the calendar, then re-attaches all the click
+// handlers (trailer buttons, price-history toggles) and restarts the
+// screenshot carousels — handlers must be re-wired after every rebuild
+// because the old elements were thrown away.
 function render(){
   const grid = $("#grid");
   const visible = GAMES.filter(g => FILTER === "all" || (FILTER === "sale" ? onSale(g) : g.platform === FILTER));
@@ -356,6 +494,15 @@ function render(){
   initShots();
 }
 
+/* ===== Screenshot carousel behaviour =====
+   initShots() runs after every render. For each carousel it:
+   - tracks which screenshot is showing and lights the matching dot,
+   - auto-advances every 3 seconds, but ONLY while the carousel is on
+     screen (an IntersectionObserver tracks visibility) and only if the
+     user hasn't touched it in the last 6 seconds,
+   - does not auto-advance at all for users with "reduce motion" enabled.
+   Timers/observers from the previous render are torn down first so they
+   don't pile up. */
 let shotTimers = [];
 let shotsObs = null;
 function initShots(){
@@ -392,6 +539,11 @@ function initShots(){
   });
 }
 
+/* ===== Trailers (YouTube) =====
+   loadYT() loads Google's YouTube IFrame Player API once and returns a
+   promise that resolves when the API is ready. Using the API (instead of a
+   plain embed) lets us call playVideo() directly, which is what makes the
+   trailer actually start when you tap "Watch trailer". */
 let ytApiPromise = null;
 function loadYT(){
   if(ytApiPromise) return ytApiPromise;
@@ -406,6 +558,13 @@ function loadYT(){
   return ytApiPromise;
 }
 
+// playTrailer(): replaces a card's banner art with the game's YouTube
+// trailer and starts it playing. It first scrolls the banner into view.
+// Two paths: the IFrame API player (preferred — starts reliably), or, if
+// the API hasn't loaded within 3.5 seconds, a plain autoplay embed as a
+// fallback so the tap never feels dead. Note iOS can still require a tap
+// on the video itself in some situations — that's Apple's autoplay policy,
+// not something the page controls.
 function playTrailer(btn){
   const id = btn.getAttribute("data-trailer");
   const card = btn.getAttribute("data-card");
@@ -431,15 +590,22 @@ function playTrailer(btn){
   }).catch(() => { if(!started){ started = true; clearTimeout(fallback); banner.innerHTML = plainEmbed; } });
 }
 
+// setFilter(): switches the active filter, highlights the matching chip and
+// nav link, and re-renders. Called by both the chips and the top nav.
 function setFilter(f){
   FILTER = f;
   document.querySelectorAll("#chips .chip").forEach(c => c.classList.toggle("on", c.getAttribute("data-filter") === f));
   document.querySelectorAll("#topnav a").forEach(a => a.classList.toggle("on", a.getAttribute("data-filter") === f));
   render();
 }
+// Wire the chips and nav links to setFilter() once, at page load.
 document.querySelectorAll("#chips .chip").forEach(c => c.addEventListener("click", () => setFilter(c.getAttribute("data-filter"))));
 document.querySelectorAll("#topnav a").forEach(a => a.addEventListener("click", () => setFilter(a.getAttribute("data-filter"))));
 
+/* ===== Boot: download the data and draw the page =====
+   The "?ts=" + Date.now() makes every visit fetch a fresh games.json
+   instead of a cached copy, so price updates show up immediately.
+   If the download fails, an error box replaces the grid. */
 fetch("games.json?ts=" + Date.now())
   .then(r => { if(!r.ok) throw new Error("games.json " + r.status); return r.json(); })
   .then(data => {
