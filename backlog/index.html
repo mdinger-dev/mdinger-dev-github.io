@@ -29,7 +29,7 @@
   .banner{height:158px;position:relative;overflow:hidden;background:#10141a;flex:none}
   .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
   .banner iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-  .shotswrap{position:relative;flex:none;background:#0b0e13}
+  .shotswrap{position:relative;flex:none;background:#0b0e13;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin:10px 0 2px}
   .shots{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .shots::-webkit-scrollbar{display:none}
   .shots .shot{flex:0 0 100%;scroll-snap-align:start}
@@ -225,10 +225,10 @@ function cardHTML(g){
       (hasTrailer ? '<button class="playbtn" data-trailer="' + esc(g.trailer) + '" data-card="' + g.id + '" aria-label="Play trailer"><i></i></button>' : '') +
       '<div class="gtitle">' + esc(g.title) + '</div>' +
     '</div>' +
-    shotsBlock(g) +
     '<div class="body">' +
       '<div class="titlerow"><img class="thumb" src="' + esc(g.boxart) + '" alt="' + esc(g.title) + ' box art"><div class="plat">' + tags + '</div></div>' +
       priceBlock +
+      shotsBlock(g) +
       '<div class="specs">' +
         '<div class="spec"><div class="k">RELEASE DATE</div><div class="v">' + esc(fmtRelease(g.releaseDate)) + (g.releaseTime ? ' · ' + esc(g.releaseTime) : '') + '</div></div>' +
         '<div class="spec"><div class="k">FILE SIZE</div><div class="v">' + esc(s.size || "—") + '</div></div>' +
