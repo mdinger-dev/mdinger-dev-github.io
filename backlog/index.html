@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Backlog — Mike's Game Wishlist</title>
-<meta name="description" content="Game wishlist with price tracking, sale alerts, and price history across Switch 2, iPhone, and PS5.">
+<title>The Wishlist — Games Mike Wants to Pick Up</title>
+<meta name="description" content="Mike's game wishlist: games that aren't out yet, games he's watching for a sale, current prices, and price history across Switch 2, Switch, iPhone, and PS5.">
 <style>
   :root{
     --bg:#0e1116; --surface:#161b22; --surface2:#1c232d; --border:#2a333f;
@@ -87,21 +87,23 @@
 <body>
 <div class="wrap">
   <header class="site">
-    <div class="logo">The <span>Backlog</span></div>
+    <div class="logo">The <span>Wishlist</span></div>
     <nav class="top" id="topnav">
       <a data-filter="all" class="on">Wishlist</a>
       <a data-filter="sale">On Sale</a>
       <a data-filter="Switch 2">Switch 2</a>
+      <a data-filter="Switch">Switch</a>
       <a data-filter="iPhone">iPhone</a>
       <a data-filter="PS5">PS5</a>
     </nav>
   </header>
-  <p class="tagline">Every game Mike is watching — current prices, sale alerts with end dates, and the full price history behind each one.</p>
+  <p class="tagline">Games Mike wants to pick up — ones that aren't out yet, ones he's watching for a sale — all in one place, with current prices, sale end dates, and price history.</p>
 
   <div class="addbar">
     <input id="q-name" type="text" placeholder="Add a game to track… e.g. Hades II" aria-label="Game name">
     <select id="q-platform" aria-label="Platform">
       <option>Switch 2</option>
+      <option>Switch</option>
       <option>iPhone</option>
       <option>PS5</option>
     </select>
@@ -112,6 +114,7 @@
   <div class="chips" id="chips">
     <div class="chip on" data-filter="all">All games</div>
     <div class="chip" data-filter="Switch 2">Switch 2</div>
+    <div class="chip" data-filter="Switch">Switch</div>
     <div class="chip" data-filter="iPhone">iPhone</div>
     <div class="chip" data-filter="PS5">PS5</div>
     <div class="chip" data-filter="sale">On sale now</div>
@@ -136,7 +139,7 @@ try { queue = JSON.parse(localStorage.getItem(QKEY) || "[]"); } catch(e) { queue
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const money = n => (n === 0 ? "Free" : "$" + Number(n).toFixed(2));
+const money = n => (n === null || n === undefined ? "—" : (n === 0 ? "Free" : "$" + Number(n).toFixed(2)));
 function fmtDate(iso){
   if(!iso) return "";
   const p = iso.split("-").map(Number);
@@ -148,6 +151,11 @@ function fmtDateShort(iso){
   const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   return months[p[1]-1] + " " + p[2];
 }
+function fmtRelease(r){
+  if(!r) return "TBA";
+  if(/^\d{4}-\d{2}-\d{2}$/.test(r)) return fmtDateShort(r) + ", " + r.slice(0, 4);
+  return r;
+}
 function daysUntil(iso){
   const now = new Date(); now.setHours(0,0,0,0);
   const p = iso.split("-").map(Number);
@@ -157,7 +165,7 @@ function daysUntil(iso){
 const onSale = g => g.regularPrice > 0 && g.price < g.regularPrice;
 
 function sparkline(g){
-  const h = g.history || [];
+  const h = (g.history || []).filter(x => x.price !== null && x.price !== undefined);
   if(h.length < 2) return "";
   const prices = h.map(x => x.price);
   const min = Math.min(...prices), max = Math.max(...prices);
@@ -195,19 +203,26 @@ function cardHTML(g){
     '<span class="pb' + (i === 0 ? ' platform' : '') + '">' + esc(t) + '</span>').join("");
   const s = g.specs || {};
   const storeBtn = g.storeUrl ? '<a class="a-btn" href="' + esc(g.storeUrl) + '" target="_blank" rel="noopener">' + esc(g.store || "Store") + '</a>' : "";
+  const hasTrailer = !!g.trailer;
+  const unpriced = (g.price === null || g.price === undefined);
+  const priceBlock = unpriced
+    ? '<div class="price-row"><span class="price" style="font-size:17px">' + esc(g.statusNote || "Not yet priced") + '</span></div>'
+    : '<div class="price-row"><span class="price' + (g.price === 0 ? ' free' : '') + '">' + money(g.price) + '</span>' +
+      (sale ? '<span class="was">' + money(g.regularPrice) + '</span><span class="ends">' + esc(endsTxt) + '</span>' : '') + '</div>' +
+      (g.statusNote ? '<div class="meta" style="margin-top:-4px">' + esc(g.statusNote) + '</div>' : '');
   return '<article class="card" data-platform="' + esc(g.platform) + '" data-sale="' + (sale ? "1" : "0") + '">' +
     '<div class="banner" id="banner-' + g.id + '">' +
       '<img src="' + esc(g.banner) + '" alt="' + esc(g.title) + ' banner art"' + (g.bannerPosition ? ' style="object-position:' + esc(g.bannerPosition) + '"' : '') + '>' +
       '<div class="scrim"></div>' +
       (sale ? '<div class="salebadge">ON SALE −' + pct + '%</div>' : '') +
-      '<button class="playbtn" data-trailer="' + esc(g.trailer || "") + '" data-card="' + g.id + '" aria-label="Play trailer"><i></i></button>' +
+      (hasTrailer ? '<button class="playbtn" data-trailer="' + esc(g.trailer) + '" data-card="' + g.id + '" aria-label="Play trailer"><i></i></button>' : '') +
       '<div class="gtitle">' + esc(g.title) + '</div>' +
     '</div>' +
     '<div class="body">' +
       '<div class="titlerow"><img class="thumb" src="' + esc(g.boxart) + '" alt="' + esc(g.title) + ' box art"><div class="plat">' + tags + '</div></div>' +
-      '<div class="price-row"><span class="price' + (g.price === 0 ? ' free' : '') + '">' + money(g.price) + '</span>' +
-      (sale ? '<span class="was">' + money(g.regularPrice) + '</span><span class="ends">' + esc(endsTxt) + '</span>' : '') + '</div>' +
+      priceBlock +
       '<div class="specs">' +
+        '<div class="spec"><div class="k">RELEASE DATE</div><div class="v">' + esc(fmtRelease(g.releaseDate)) + '</div></div>' +
         '<div class="spec"><div class="k">FILE SIZE</div><div class="v">' + esc(s.size || "—") + '</div></div>' +
         '<div class="spec"><div class="k">PLAYERS</div><div class="v">' + esc(s.players || "—") + '</div></div>' +
         '<div class="spec"><div class="k">GENRE</div><div class="v">' + esc(s.genre || "—") + '</div></div>' +
@@ -217,7 +232,7 @@ function cardHTML(g){
       '<div class="meta">' + esc(g.description || "") + '</div>' +
       sparkline(g) +
       '<div class="actions">' +
-        '<button class="a-btn primary" data-trailer="' + esc(g.trailer || "") + '" data-card="' + g.id + '">Watch trailer</button>' +
+        (hasTrailer ? '<button class="a-btn primary" data-trailer="' + esc(g.trailer) + '" data-card="' + g.id + '">Watch trailer</button>' : '') +
         '<button class="a-btn" data-hist="' + g.id + '">Price history</button>' +
         storeBtn +
       '</div>' +
@@ -285,8 +300,8 @@ function saveQueue(){ try { localStorage.setItem(QKEY, JSON.stringify(queue)); }
 
 function sendQueue(){
   const lines = queue.map(q => "- " + q.name + " (" + q.platform + ")").join("\n");
-  const title = encodeURIComponent("Backlog queue: " + queue.length + " game" + (queue.length > 1 ? "s" : "") + " to add");
-  const body = encodeURIComponent("Hi Aria — please add these to The Backlog with full cards (art, trailer, specs, price tracking):\n\n" + lines);
+  const title = encodeURIComponent("Wishlist queue: " + queue.length + " game" + (queue.length > 1 ? "s" : "") + " to add");
+  const body = encodeURIComponent("Hi Aria — please add these to The Wishlist with full cards (art, trailer, specs, price tracking):\n\n" + lines);
   window.open(REPO_ISSUES + "?title=" + title + "&body=" + body, "_blank");
 }
 
