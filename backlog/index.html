@@ -21,13 +21,6 @@
   nav.top a{color:var(--muted);text-decoration:none;cursor:pointer}
   nav.top a.on{color:var(--text);font-weight:700}
   .tagline{color:var(--muted);font-size:13.5px;margin:12px 0 0}
-  .addbar{display:flex;gap:8px;margin:18px 0 6px;flex-wrap:wrap}
-  .addbar input,.addbar select{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:11px 12px;font-size:14.5px;color:var(--text)}
-  .addbar input{flex:1 1 220px}
-  .addbar input::placeholder{color:var(--muted)}
-  .btn{background:var(--accent);color:var(--accent-ink);border:none;border-radius:10px;padding:11px 18px;font-size:14.5px;font-weight:700;cursor:pointer}
-  .btn.secondary{background:var(--surface2);color:var(--text);border:1px solid var(--border)}
-  .hint{font-size:12.5px;color:var(--muted);margin:2px 0 14px}
   .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
   .chip{font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer}
   .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
@@ -69,13 +62,6 @@
   .histbox th{color:var(--muted);font-size:11px;letter-spacing:.4px}
   .histbox tr:last-child td{border-bottom:none}
   .down{color:var(--green);font-weight:700}
-  .queued-card{border:1.5px dashed var(--border);border-radius:14px;padding:14px;background:var(--surface2);display:flex;flex-direction:column;gap:8px}
-  .q-badge{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.8px;padding:3px 8px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);width:fit-content}
-  .queued-card .qt{font-weight:800;font-size:15.5px}
-  .q-remove{align-self:flex-start;background:none;border:none;color:var(--muted);font-size:12.5px;cursor:pointer;padding:0;text-decoration:underline}
-  .queuebar{display:none;margin-top:14px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:12px 14px;gap:10px;align-items:center;flex-wrap:wrap}
-  .queuebar.show{display:flex}
-  .queuebar .qt2{font-size:13.5px;color:var(--muted);flex:1 1 200px}
   footer{margin-top:26px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.6}
   .err{background:rgba(229,72,77,.12);border:1px solid var(--red);border-radius:10px;padding:12px 14px;font-size:14px}
   .calwrap{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px}
@@ -130,17 +116,6 @@
   </header>
   <p class="tagline">Games Mike wants to pick up — ones that aren't out yet, ones he's watching for a sale — all in one place, with current prices, sale end dates, and price history.</p>
 
-  <div class="addbar">
-    <input id="q-name" type="text" placeholder="Add a game to track… e.g. Hades II" aria-label="Game name">
-    <select id="q-platform" aria-label="Platform">
-      <option>Switch 2</option>
-      <option>iPhone</option>
-      <option>PS5</option>
-    </select>
-    <button class="btn" id="q-add">Queue it</button>
-  </div>
-  <p class="hint">Queued games appear below as placeholders. Send the queue to Aria and she fills in the banner, box art, trailer, specs, and price tracking — or just name the game in chat, same result.</p>
-
   <div class="chips" id="chips">
     <div class="chip on" data-filter="all">All games</div>
     <div class="chip" data-filter="Switch 2">Switch 2</div>
@@ -152,7 +127,6 @@
   <section class="calwrap" id="calwrap"></section>
 
   <div class="grid" id="grid"></div>
-  <div class="queuebar" id="queuebar"></div>
 
   <footer>
     Prices and sale dates checked by Aria — sale alerts land in chat with the end date.<br>
@@ -160,11 +134,7 @@
   </footer>
 </div>
 <script>
-const REPO_ISSUES = "https://github.com/mdinger-dev/mdinger-dev-github.io/issues/new";
-const QKEY = "backlogQueueV1";
 let GAMES = [], FILTER = "all";
-let queue = [];
-try { queue = JSON.parse(localStorage.getItem(QKEY) || "[]"); } catch(e) { queue = []; }
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -355,38 +325,15 @@ function renderCalendar(){
   el.querySelectorAll("[data-goto]").forEach(b => b.addEventListener("click", () => gotoGame(b.getAttribute("data-goto"))));
 }
 
-function queuedHTML(q, idx){
-  return '<div class="queued-card"><span class="q-badge">QUEUED</span>' +
-    '<div class="qt">' + esc(q.name) + ' — ' + esc(q.platform) + '</div>' +
-    '<div class="meta">Waiting on Aria: banner, box art, specs, trailer, store link, and price tracking.</div>' +
-    '<button class="q-remove" data-remove="' + idx + '">Remove from queue</button></div>';
-}
-
 function render(){
   const grid = $("#grid");
   const visible = GAMES.filter(g => FILTER === "all" || (FILTER === "sale" ? onSale(g) : g.platform === FILTER));
-  let html = visible.map(cardHTML).join("");
-  if(FILTER === "all") html += queue.map(queuedHTML).join("");
-  grid.innerHTML = html || '<div class="err">No games match this filter yet.</div>';
+  grid.innerHTML = visible.map(cardHTML).join("") || '<div class="err">No games match this filter yet.</div>';
   renderCalendar();
-  const bar = $("#queuebar");
-  if(queue.length){
-    bar.className = "queuebar show";
-    bar.innerHTML = '<span class="qt2">' + queue.length + ' game' + (queue.length > 1 ? 's' : '') + ' in your queue. Send it to Aria and the finished cards replace these placeholders on the next update.</span>' +
-      '<button class="btn" id="q-send">Send queue to Aria</button>' +
-      '<button class="btn secondary" id="q-clear">Clear queue</button>';
-    $("#q-send").addEventListener("click", sendQueue);
-    $("#q-clear").addEventListener("click", () => { queue = []; saveQueue(); render(); });
-  } else {
-    bar.className = "queuebar"; bar.innerHTML = "";
-  }
   document.querySelectorAll("[data-trailer]").forEach(b => b.addEventListener("click", () => playTrailer(b)));
   document.querySelectorAll("[data-hist]").forEach(b => b.addEventListener("click", () => {
     const box = document.getElementById("hist-" + b.getAttribute("data-hist"));
     if(box) box.classList.toggle("open");
-  }));
-  document.querySelectorAll("[data-remove]").forEach(b => b.addEventListener("click", () => {
-    queue.splice(Number(b.getAttribute("data-remove")), 1); saveQueue(); render();
   }));
 }
 
@@ -399,15 +346,6 @@ function playTrailer(btn){
   banner.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0" title="Trailer" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
 }
 
-function saveQueue(){ try { localStorage.setItem(QKEY, JSON.stringify(queue)); } catch(e){} }
-
-function sendQueue(){
-  const lines = queue.map(q => "- " + q.name + " (" + q.platform + ")").join("\n");
-  const title = encodeURIComponent("Wishlist queue: " + queue.length + " game" + (queue.length > 1 ? "s" : "") + " to add");
-  const body = encodeURIComponent("Hi Aria — please add these to The Wishlist with full cards (art, trailer, specs, price tracking):\n\n" + lines);
-  window.open(REPO_ISSUES + "?title=" + title + "&body=" + body, "_blank");
-}
-
 function setFilter(f){
   FILTER = f;
   document.querySelectorAll("#chips .chip").forEach(c => c.classList.toggle("on", c.getAttribute("data-filter") === f));
@@ -416,16 +354,6 @@ function setFilter(f){
 }
 document.querySelectorAll("#chips .chip").forEach(c => c.addEventListener("click", () => setFilter(c.getAttribute("data-filter"))));
 document.querySelectorAll("#topnav a").forEach(a => a.addEventListener("click", () => setFilter(a.getAttribute("data-filter"))));
-
-$("#q-add").addEventListener("click", () => {
-  const name = $("#q-name").value.trim();
-  if(!name) { $("#q-name").focus(); return; }
-  queue.push({ name: name, platform: $("#q-platform").value });
-  $("#q-name").value = "";
-  saveQueue();
-  setFilter("all");
-});
-$("#q-name").addEventListener("keydown", e => { if(e.key === "Enter") $("#q-add").click(); });
 
 fetch("games.json?ts=" + Date.now())
   .then(r => { if(!r.ok) throw new Error("games.json " + r.status); return r.json(); })
