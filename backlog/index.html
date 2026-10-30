@@ -82,6 +82,42 @@
   .queuebar .qt2{font-size:13.5px;color:var(--muted);flex:1 1 200px}
   footer{margin-top:26px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.6}
   .err{background:rgba(229,72,77,.12);border:1px solid var(--red);border-radius:10px;padding:12px 14px;font-size:14px}
+  .calwrap{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:16px}
+  .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+  .cal-title{font-size:16px;font-weight:800}
+  .cal-nav{background:var(--surface2);border:1px solid var(--border);color:var(--text);width:32px;height:32px;border-radius:8px;font-size:18px;cursor:pointer}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+  .cal-dow{text-align:center;font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.6px;padding:2px 0}
+  .cal-day{min-height:64px;background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:5px 6px;font-size:12px}
+  .cal-day.empty{background:transparent;border:none}
+  .cal-day.today{border-color:var(--accent)}
+  .cal-day.has{cursor:pointer}
+  .cal-day.has:not(.past){border-color:rgba(91,140,255,.55)}
+  .cal-num{font-weight:700;font-size:12px;color:var(--muted)}
+  .cal-day.today .cal-num{color:var(--accent)}
+  .cal-ev{font-size:10.5px;font-weight:700;line-height:1.25;margin-top:3px;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cal-day.past .cal-ev{color:var(--muted)}
+  .cal-more{font-size:10px;color:var(--muted);margin-top:2px}
+  .cal-detail{margin-top:10px}
+  .cal-detail:empty{display:none}
+  .cal-detail-h{font-weight:800;font-size:13.5px;margin-bottom:5px}
+  .cal-detail-row{display:flex;gap:8px;align-items:baseline;font-size:13px;padding:3px 0;color:var(--muted);flex-wrap:wrap}
+  .cal-detail-row b{color:var(--text)}
+  .cal-link{background:none;border:none;color:var(--accent);font-size:12.5px;font-weight:700;cursor:pointer;padding:0;text-decoration:underline}
+  .cal-up{margin-top:12px;border-top:1px solid var(--border);padding-top:10px}
+  .cal-up-h{font-size:11px;font-weight:800;letter-spacing:.8px;color:var(--muted);margin-bottom:7px}
+  .cal-up-item{display:flex;flex-direction:column;align-items:flex-start;gap:1px;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:8px 10px;margin-bottom:6px;cursor:pointer;color:var(--text);font-size:13.5px}
+  .cal-up-item span{font-size:12px;color:var(--muted)}
+  .cal-tba{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5}
+  .cal-note{font-size:11.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+  @media (max-width:560px){ .cal-day{min-height:52px;padding:4px} .cal-ev{font-size:9.5px} }
+  .hltb{background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:9px 11px}
+  .hltb-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
+  .hltb-head .t{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--muted)}
+  .hltb-head a{font-size:11px;color:var(--accent);text-decoration:none;font-weight:700}
+  .hltb-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px 10px}
+  .hltb .k{font-size:10px;font-weight:800;letter-spacing:.8px;color:var(--muted)}
+  .hltb .v{font-size:13.5px;font-weight:700;margin-top:1px}
 </style>
 </head>
 <body>
@@ -119,6 +155,8 @@
     <div class="chip" data-filter="PS5">PS5</div>
     <div class="chip" data-filter="sale">On sale now</div>
   </div>
+
+  <section class="calwrap" id="calwrap"></section>
 
   <div class="stats" id="stats"></div>
 
@@ -222,12 +260,13 @@ function cardHTML(g){
       '<div class="titlerow"><img class="thumb" src="' + esc(g.boxart) + '" alt="' + esc(g.title) + ' box art"><div class="plat">' + tags + '</div></div>' +
       priceBlock +
       '<div class="specs">' +
-        '<div class="spec"><div class="k">RELEASE DATE</div><div class="v">' + esc(fmtRelease(g.releaseDate)) + '</div></div>' +
+        '<div class="spec"><div class="k">RELEASE DATE</div><div class="v">' + esc(fmtRelease(g.releaseDate)) + (g.releaseTime ? ' · ' + esc(g.releaseTime) : '') + '</div></div>' +
         '<div class="spec"><div class="k">FILE SIZE</div><div class="v">' + esc(s.size || "—") + '</div></div>' +
         '<div class="spec"><div class="k">PLAYERS</div><div class="v">' + esc(s.players || "—") + '</div></div>' +
         '<div class="spec"><div class="k">GENRE</div><div class="v">' + esc(s.genre || "—") + '</div></div>' +
         '<div class="spec"><div class="k">' + esc(s.extraLabel || "PUBLISHER") + '</div><div class="v">' + esc(s.extra || "—") + '</div></div>' +
       '</div>' +
+      hltbBlock(g) +
       (g.alertNote ? '<div class="alert">' + esc(g.alertNote) + '</div>' : '') +
       '<div class="meta">' + esc(g.description || "") + '</div>' +
       sparkline(g) +
@@ -238,6 +277,91 @@ function cardHTML(g){
       '</div>' +
       historyRows(g) +
     '</div></article>';
+}
+
+function fmtHours(v){
+  if(v === null || v === undefined) return "—";
+  const r = Math.round(v * 2) / 2;
+  const whole = Math.floor(r);
+  const frac = (r - whole === 0.5) ? "½" : "";
+  const num = ((whole ? String(whole) : "") + frac) || "0";
+  return num + (r === 1 ? " hr" : " hrs");
+}
+function hltbBlock(g){
+  const h = g.hltb;
+  if(!h || (h.main == null && h.mainExtra == null && h.completionist == null)) return "";
+  return '<div class="hltb"><div class="hltb-head"><span class="t">⏱ HOW LONG TO BEAT</span>' +
+    (h.url ? '<a href="' + esc(h.url) + '" target="_blank" rel="noopener">HowLongToBeat ↗</a>' : '') + '</div>' +
+    '<div class="hltb-grid">' +
+    '<div><div class="k">MAIN STORY</div><div class="v">' + fmtHours(h.main) + '</div></div>' +
+    '<div><div class="k">MAIN + EXTRAS</div><div class="v">' + fmtHours(h.mainExtra) + '</div></div>' +
+    '<div><div class="k">COMPLETIONIST</div><div class="v">' + fmtHours(h.completionist) + '</div></div>' +
+    '</div></div>';
+}
+
+let calY, calM;
+function isoOf(d){ return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); }
+function relMap(){
+  const map = {};
+  GAMES.forEach(g => {
+    if(g.releaseDate && /^\d{4}-\d{2}-\d{2}$/.test(g.releaseDate)){
+      (map[g.releaseDate] = map[g.releaseDate] || []).push(g);
+    }
+  });
+  return map;
+}
+function gotoGame(id){
+  setFilter("all");
+  const el = document.getElementById("banner-" + id);
+  if(el) el.scrollIntoView({behavior:"smooth", block:"center"});
+}
+function showCalDay(iso, map){
+  const gs = map[iso] || [];
+  const det = $("#cal-detail");
+  if(!det) return;
+  det.innerHTML = '<div class="cal-detail-h">' + esc(fmtDate(iso)) + '</div>' + gs.map(g =>
+    '<div class="cal-detail-row"><b>' + esc(g.title) + '</b><span>' + esc(g.platform) + (g.releaseTime ? ' · unlocks ' + esc(g.releaseTime) : '') + '</span><button class="cal-link" data-goto="' + g.id + '">View card</button></div>').join("");
+  det.querySelectorAll("[data-goto]").forEach(b => b.addEventListener("click", () => gotoGame(b.getAttribute("data-goto"))));
+}
+function renderCalendar(){
+  const el = $("#calwrap");
+  if(!el) return;
+  const now = new Date();
+  if(calY === undefined){ calY = now.getFullYear(); calM = now.getMonth(); }
+  const map = relMap();
+  const first = new Date(calY, calM, 1);
+  const startDay = first.getDay();
+  const dim = new Date(calY, calM+1, 0).getDate();
+  const monthName = first.toLocaleString("en-US", {month:"long", year:"numeric"});
+  const todayISO = isoOf(now);
+  let cells = "";
+  ["Su","Mo","Tu","We","Th","Fr","Sa"].forEach(d => cells += '<div class="cal-dow">' + d + '</div>');
+  for(let i=0;i<startDay;i++) cells += '<div class="cal-day empty"></div>';
+  for(let d=1; d<=dim; d++){
+    const iso = calY + "-" + String(calM+1).padStart(2,"0") + "-" + String(d).padStart(2,"0");
+    const gs = map[iso] || [];
+    cells += '<div class="cal-day' + (iso===todayISO ? ' today' : '') + (gs.length ? ' has' + (iso < todayISO ? ' past' : '') : '') + '"' + (gs.length ? ' data-calday="' + iso + '"' : '') + '>' +
+      '<div class="cal-num">' + d + '</div>' +
+      gs.slice(0,2).map(g => '<div class="cal-ev">' + esc(g.title) + '</div>').join("") +
+      (gs.length > 2 ? '<div class="cal-more">+' + (gs.length-2) + ' more</div>' : '') +
+      '</div>';
+  }
+  const upcoming = GAMES.filter(g => g.releaseDate && /^\d{4}-\d{2}-\d{2}$/.test(g.releaseDate) && g.releaseDate >= todayISO)
+    .sort((a,b) => a.releaseDate < b.releaseDate ? -1 : 1).slice(0,6);
+  const upHTML = upcoming.length ? '<div class="cal-up"><div class="cal-up-h">COMING UP</div>' + upcoming.map(g => {
+      const du = daysUntil(g.releaseDate);
+      return '<button class="cal-up-item" data-goto="' + g.id + '"><b>' + esc(g.title) + '</b><span>' + esc(fmtDateShort(g.releaseDate)) + (g.releaseTime ? ' · ' + esc(g.releaseTime) : '') + ' · ' + (du===0 ? 'releases today!' : du===1 ? 'tomorrow' : 'in ' + du + ' days') + ' · ' + esc(g.platform) + '</span></button>';
+    }).join("") + '</div>' : "";
+  const tba = GAMES.filter(g => !g.releaseDate || !/^\d{4}-\d{2}-\d{2}$/.test(g.releaseDate));
+  const tbaHTML = tba.length ? '<div class="cal-tba">No exact date yet: ' + tba.map(g => esc(g.title) + (g.releaseDate ? ' (' + esc(g.releaseDate) + ')' : ' (TBA)')).join(" · ") + '</div>' : "";
+  el.innerHTML = '<div class="cal-head"><button class="cal-nav" id="cal-prev" aria-label="Previous month">‹</button><div class="cal-title">📅 Release calendar — ' + esc(monthName) + '</div><button class="cal-nav" id="cal-next" aria-label="Next month">›</button></div>' +
+    '<div class="cal-grid">' + cells + '</div>' +
+    '<div class="cal-detail" id="cal-detail"></div>' + upHTML + tbaHTML +
+    '<div class="cal-note">Release times: exact unlock times are rarely announced in advance — most eShop games unlock at 9 AM PT on release day and App Store games roll out that morning. When a publisher announces an exact time, it shows here and on the card.</div>';
+  $("#cal-prev").addEventListener("click", () => { calM--; if(calM<0){ calM=11; calY--; } renderCalendar(); });
+  $("#cal-next").addEventListener("click", () => { calM++; if(calM>11){ calM=0; calY++; } renderCalendar(); });
+  el.querySelectorAll("[data-calday]").forEach(c => c.addEventListener("click", () => showCalDay(c.getAttribute("data-calday"), map)));
+  el.querySelectorAll("[data-goto]").forEach(b => b.addEventListener("click", () => gotoGame(b.getAttribute("data-goto"))));
 }
 
 function statsHTML(){
@@ -265,6 +389,7 @@ function render(){
   let html = visible.map(cardHTML).join("");
   if(FILTER === "all") html += queue.map(queuedHTML).join("");
   grid.innerHTML = html || '<div class="err">No games match this filter yet.</div>';
+  renderCalendar();
   $("#stats").innerHTML = statsHTML();
   const bar = $("#queuebar");
   if(queue.length){
