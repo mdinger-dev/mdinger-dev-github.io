@@ -31,10 +31,6 @@
   .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
   .chip{font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer}
   .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
-  .stats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-  .stat{flex:1 1 130px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:11px 13px}
-  .stat .n{font-size:20px;font-weight:800}
-  .stat .l{font-size:12px;color:var(--muted);margin-top:1px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px var(--shadow);display:flex;flex-direction:column}
   .banner{height:158px;position:relative;overflow:hidden;background:#10141a;flex:none}
@@ -157,8 +153,6 @@
   </div>
 
   <section class="calwrap" id="calwrap"></section>
-
-  <div class="stats" id="stats"></div>
 
   <div class="grid" id="grid"></div>
   <div class="queuebar" id="queuebar"></div>
@@ -364,18 +358,6 @@ function renderCalendar(){
   el.querySelectorAll("[data-goto]").forEach(b => b.addEventListener("click", () => gotoGame(b.getAttribute("data-goto"))));
 }
 
-function statsHTML(){
-  const tracked = GAMES.length;
-  const sales = GAMES.filter(onSale).length;
-  const saved = GAMES.reduce((a,g) => a + (onSale(g) ? g.regularPrice - g.price : 0), 0);
-  const gb = GAMES.reduce((a,g) => a + ((g.specs && g.specs.sizeGB) || 0), 0);
-  return '<div class="stat"><div class="n">' + tracked + '</div><div class="l">games tracked</div></div>' +
-    '<div class="stat"><div class="n">' + sales + '</div><div class="l">on sale right now</div></div>' +
-    '<div class="stat"><div class="n">$' + saved.toFixed(2) + '</div><div class="l">saved vs. full price</div></div>' +
-    '<div class="stat"><div class="n">' + Math.round(gb) + ' GB</div><div class="l">total download size</div></div>' +
-    '<div class="stat"><div class="n">' + queue.length + '</div><div class="l">queued for Aria</div></div>';
-}
-
 function queuedHTML(q, idx){
   return '<div class="queued-card"><span class="q-badge">QUEUED</span>' +
     '<div class="qt">' + esc(q.name) + ' — ' + esc(q.platform) + '</div>' +
@@ -390,7 +372,6 @@ function render(){
   if(FILTER === "all") html += queue.map(queuedHTML).join("");
   grid.innerHTML = html || '<div class="err">No games match this filter yet.</div>';
   renderCalendar();
-  $("#stats").innerHTML = statsHTML();
   const bar = $("#queuebar");
   if(queue.length){
     bar.className = "queuebar show";
