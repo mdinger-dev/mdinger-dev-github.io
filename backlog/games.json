@@ -925,6 +925,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 39.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -936,10 +941,10 @@
       "id": "everspace-2-galactic-edition",
       "lowestEver": 39.99,
       "platform": "Switch 2",
-      "price": 39.99,
+      "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-08-12",
-      "saleEnds": "2026-11-01",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000131856/516a70c30092c6d26b3418217b5aaaf7e545241a68419c1457f3a61558820a77",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000131856/72770cc37de89ceed4f5369e87bbb572c012e3950324b01553c8a3a7f77e9412",
@@ -980,6 +985,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 29.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 59.99
         }
       ],
       "hltb": {
@@ -991,10 +1001,10 @@
       "id": "the-elder-scrolls-v-skyrim-anniversary-edition",
       "lowestEver": 29.99,
       "platform": "Switch 2",
-      "price": 29.99,
+      "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-12-09",
-      "saleEnds": "2026-11-01",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000015127/094f90717638a7b5c4e6324dd7d9379eee7b76f10f9afd27cae936f67f20c20d",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000015127/5d16c1a9a31651e01e28e20a7fddc2ac22a5e38e1e55615ac21d9dfaf5ec3f8e",
@@ -1217,6 +1227,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 59.49
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 69.99
         }
       ],
       "hltb": {
@@ -1228,10 +1243,10 @@
       "id": "lies-of-p-complete-edition",
       "lowestEver": 59.49,
       "platform": "Switch 2",
-      "price": 59.49,
+      "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-08-06",
-      "saleEnds": "2026-11-01",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103577/2b11b5790a0865b68ba9683aaeb1c4d00f5ffccd79817aac4fd5e250e5534138",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103577/5d09c4d69c4f89415bf7a379eb27f96b804892b387622fc746099493f3d94024",
@@ -1366,6 +1381,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 39.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -1377,10 +1397,10 @@
       "id": "the-elder-scrolls-iv-oblivion-remastered",
       "lowestEver": 39.99,
       "platform": "Switch 2",
-      "price": 39.99,
+      "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-08-11",
-      "saleEnds": "2026-11-01",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103529/09eb6ebd27dc8328eabe6cff8cc1e2724ef459028db0ece05add9d29b6d567ab",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103529/0b4c29c40789df804a520aa3cbec0c011b918623a7d7e6ed5f750aa25daed2c4",
@@ -1922,6 +1942,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 49.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale — ends Nov 12",
+          "price": 42.99
         }
       ],
       "hltb": {
@@ -1931,12 +1956,12 @@
         "url": "https://howlongtobeat.com/game/9037"
       },
       "id": "star-fox",
-      "lowestEver": 49.99,
+      "lowestEver": 42.99,
       "platform": "Switch 2",
-      "price": 49.99,
+      "price": 42.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-06-25",
-      "saleEnds": null,
+      "saleEnds": "2026-11-12",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000123167/acdd6b0d6e37582de62b66d9cefa1d48957e632a6d16fa971eeebaaaaa21f4f8",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000123167/6320f30f53fc45fb3e33f7ecb8ec33b4a952225d1836423d25569723a2133e5d",
@@ -1976,6 +2001,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 29.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 59.99
         }
       ],
       "hltb": {
@@ -1987,10 +2017,10 @@
       "id": "cronos-the-new-dawn",
       "lowestEver": 29.99,
       "platform": "Switch 2",
-      "price": 29.99,
+      "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-09-05",
-      "saleEnds": "2026-11-01",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000100072/deb8cbe80e68a9b8bc32506754723624d46f4f3e28e43df4f1487498540b15a8",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000100072/0f644d49a19fc2c4b017b27f790c79ffd5914e7d8e77b2c38c4cf7b52251416e",
@@ -2351,6 +2381,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 47.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 59.99
         }
       ],
       "hltb": {
@@ -2362,10 +2397,10 @@
       "id": "fallout-4-anniversary-edition",
       "lowestEver": 47.99,
       "platform": "Switch 2",
-      "price": 47.99,
+      "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-02-24",
-      "saleEnds": "2026-11-01",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101067/860d9c129fd0f72a58750ac617fd896d678d617eac143f469e90006b596c2274",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101067/5292342f7f54215590089c4d9aea54a6cb9f1a6f05fdaa1f516cb35258833134",
@@ -3166,6 +3201,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 55.99
+        },
+        {
+          "date": "2026-11-01",
+          "note": "Sale ended — back to full price",
+          "price": 69.99
         }
       ],
       "hltb": {
@@ -3177,10 +3217,10 @@
       "id": "indiana-jones-and-the-great-circle",
       "lowestEver": 55.99,
       "platform": "Switch 2",
-      "price": 55.99,
+      "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-05-12",
-      "saleEnds": "2026-10-31",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098812/7b5eb76420611e5b0c31e4a17e4bfcb0b1a0290770cb725faa1aa584a62c29d9",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098812/c7d26ecd9427dfda19aeb7eb2b5c9494a5837de2b7672ed6e9ec32c41b4be9c9",
@@ -3616,5 +3656,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
 }
