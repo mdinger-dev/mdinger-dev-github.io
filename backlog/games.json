@@ -34,6 +34,11 @@
       "price": 23.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-06-05",
+      "review": {
+        "score": 71,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/2393/2393/reviews?sort=newest&page=8"
+      },
       "saleEnds": "2026-11-12",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099217/96db5cbc020c2e1a7ca5d54e4efdafe520768311e65f1568e366d4eb265c3bdd",
@@ -57,12 +62,7 @@
         "ESRB T"
       ],
       "title": "No Man's Sky",
-      "trailer": "cgYYQwHuh-Y",
-      "review": {
-        "score": 71,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/2393/2393/reviews?sort=newest&page=8"
-      }
+      "trailer": "cgYYQwHuh-Y"
     },
     {
       "alertNote": "Your alert: any drop below $74.99. No sales yet — the first discount gets flagged the day it lands.",
@@ -87,6 +87,11 @@
       "price": 74.99,
       "regularPrice": 74.99,
       "releaseDate": "2026-10-08",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/21490/kingdom-hearts-collection-i-iii-"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70070000036603/6f7572e4519a7cad6e356fecc24ff19cafdd1c10f4047bcc2f611652e1f1e5d6",
@@ -110,12 +115,7 @@
         "7 games in one"
       ],
       "title": "Kingdom Hearts Collection I–III",
-      "trailer": "Ky4m8IuDFRM",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/21490/kingdom-hearts-collection-i-iii-"
-      }
+      "trailer": "Ky4m8IuDFRM"
     },
     {
       "alertNote": "Launch price. Early reviews call it one of the best mobile ports of the year — smooth 60 FPS, runs warm.",
@@ -142,6 +142,11 @@
       "price": 19.99,
       "regularPrice": 19.99,
       "releaseDate": "2026-10-29",
+      "review": {
+        "score": 74,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/9276/saints-row-the-third-remastered"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f7/ae/bb/f7aebb7e-643b-0ff3-2b76-30d1017f4b14/02fBobWork_U002fsaintsrow3_U002fGameData_U002fSaintsRow3_U002fProduction_U002fArtwork_U002f_U002f_U002fScreenshots_U002fScreenshot_iOS-6.9-in_1_EN.png/1920x1080bb.jpg",
@@ -165,12 +170,7 @@
         "18+"
       ],
       "title": "Saints Row: The Third Remastered",
-      "trailer": "asK3t0YpAcM",
-      "review": {
-        "score": 74,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/9276/saints-row-the-third-remastered"
-      }
+      "trailer": "asK3t0YpAcM"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/screenshot-gallery/screenshot01",
@@ -195,6 +195,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2021-11-19",
+      "review": {
+        "score": 74,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/11625/pokemon-brilliant-diamond-and-shining-pearl/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/screenshot-gallery/screenshot01",
@@ -218,12 +223,7 @@
         "Pokémon"
       ],
       "title": "Pokémon Brilliant Diamond",
-      "trailer": "",
-      "review": {
-        "score": 74,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/11625/pokemon-brilliant-diamond-and-shining-pearl/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000118613/86f3c6d4e129d185cbbc441169856733dea45ff231446a4edf5fec4624041849",
@@ -248,6 +248,11 @@
       "price": 19.99,
       "regularPrice": 19.99,
       "releaseDate": "2026-02-27",
+      "review": {
+        "score": 78,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20172/pok-mon-firered-and-leafgreen"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000118613/58c37877e144a040e6257f11b4a4306aca4cc776ad9ac8e13a392cbc73cd6646",
@@ -272,12 +277,7 @@
         "RPG"
       ],
       "title": "Pokémon FireRed Version",
-      "trailer": "",
-      "review": {
-        "score": 78,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20172/pok-mon-firered-and-leafgreen"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000131244/e1cee27abac1f6e16e9f7454fa1413fb2742e2dbe96f343ab2ed1b423ceccfb4",
@@ -302,6 +302,11 @@
       "price": 19.99,
       "regularPrice": 19.99,
       "releaseDate": "2026-09-30",
+      "review": {
+        "score": 85,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/201/middle-earth-shadow-of-mordor/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000131244/e1de3f8f2a90a349a521af24c0b0603ab3997bae532982c26f6491fc224a209c",
@@ -326,12 +331,7 @@
         "Adventure"
       ],
       "title": "Middle-earth: Shadow of Mordor Game of the Year Edition",
-      "trailer": "",
-      "review": {
-        "score": 85,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/201/middle-earth-shadow-of-mordor/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000115616/ff2a57103b049c496217ed1cadf987addaacd4d260feab006be29603bad59ddc",
@@ -356,6 +356,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-10-08",
+      "review": {
+        "score": 78,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/18115/hell-is-us"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000115616/64794c8fae67d62ee3c960d7065407d41c6a2733a76e769a02c59c001a83b1c5",
@@ -381,12 +386,7 @@
         "ESRB: Mature 17+"
       ],
       "title": "Hell is Us",
-      "trailer": "",
-      "review": {
-        "score": 78,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/18115/hell-is-us"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000110905/943ac82193671174ecae54dabc8c85897b561153d830d86ac288476d3a9d02e4",
@@ -411,6 +411,11 @@
       "price": 29.99,
       "regularPrice": 29.99,
       "releaseDate": "2026-09-29",
+      "review": {
+        "score": 74,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20797/minecraft-dungeons-ii/reviews"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110905/1024a2a09b6480480dec17a86e93831d33b6d0979f9a810f74a1cc5758e982b6",
@@ -436,12 +441,7 @@
         "ESRB: Everyone 10+"
       ],
       "title": "Minecraft Dungeons II",
-      "trailer": "",
-      "review": {
-        "score": 74,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20797/minecraft-dungeons-ii/reviews"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000106970/e6d0ed2d93e9cf649b0aa1771a859ff5ac2755486c4fb6934c8775ce95faafb5",
@@ -452,6 +452,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 49.99
+        },
+        {
+          "date": "2026-11-02",
+          "note": "Sale — ends Nov 16",
+          "price": 29.99
         }
       ],
       "hltb": {
@@ -461,12 +466,17 @@
         "url": "https://howlongtobeat.com/game/109435"
       },
       "id": "crisis-core-final-fantasy-vii-reunion",
-      "lowestEver": 49.99,
+      "lowestEver": 29.99,
       "platform": "Switch 2",
-      "price": 49.99,
+      "price": 29.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-09-09",
-      "saleEnds": null,
+      "review": {
+        "score": 80,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/14063/crisis-core-final-fantasy-vii-reunion"
+      },
+      "saleEnds": "2026-11-16",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000106970/58cd165c878dca37c123c185f5e2915c9cd4c50ee451ffb35ec057a71b5aeec5",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000106970/85d76300d1dba9401ef47ae2b8d9c9d3f9ae7e7a958c679184dbd6b4f8d7e061",
@@ -490,12 +500,7 @@
         "Final Fantasy"
       ],
       "title": "CRISIS CORE –FINAL FANTASY VII– REUNION",
-      "trailer": "Af6f-KvBwLU",
-      "review": {
-        "score": 80,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/14063/crisis-core-final-fantasy-vii-reunion"
-      }
+      "trailer": "Af6f-KvBwLU"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000122497/beee3d58ac46f78bc26f7584bcaed50a645af2262d6581791a0381aaf56392c7",
@@ -520,6 +525,11 @@
       "price": 39.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-10-16",
+      "review": {
+        "score": 92,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/14200/resident-evil-4-2023-"
+      },
       "saleEnds": "2026-11-07",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000122497/1f75919fb3b31f70e0386206fe6a3f9e98814d2772b9a7836c97541947253b2f",
@@ -546,12 +556,7 @@
         "On Sale"
       ],
       "title": "Resident Evil 4 Gold Edition",
-      "trailer": "",
-      "review": {
-        "score": 92,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/14200/resident-evil-4-2023-"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Software/Metroid%20Ravenous/125700-125701-nintendo-switch-2-metroid-ravenous-ss-1-1280x720",
@@ -662,6 +667,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-10-23",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20690/call-of-duty-modern-warfare-4/reviews"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70070000038706/26502a8ffc109a2c85434fcd7c4f23a9852d3ed2dd1202e3931e33a33672c5cc",
@@ -686,12 +696,7 @@
         "Multiplayer"
       ],
       "title": "Call of Duty: Modern Warfare 4 - Standard Edition",
-      "trailer": "ModGLNrCtVo",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20690/call-of-duty-modern-warfare-4/reviews"
-      }
+      "trailer": "ModGLNrCtVo"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000107220/624bf6d24ca57655a499f80d566683744892a5c28f8e37de333cba4a12054fb7",
@@ -716,6 +721,11 @@
       "price": 29.99,
       "regularPrice": 29.99,
       "releaseDate": "2026-08-27",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20107/metal-gear-solid-master-collection-vol-2"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000107220/e205a6db3cba51ddb98a25278b4e110eed702a81b17f563ea638cf20616a5b07",
@@ -740,12 +750,7 @@
         "ESRB: Mature"
       ],
       "title": "METAL GEAR SOLID 4: Guns of the Patriots — Master Collection Version",
-      "trailer": "",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20107/metal-gear-solid-master-collection-vol-2"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000128692/da1a51c79e918768af5d1556e7416c0bc906665606fd273622ecbbd5cc8cfa26",
@@ -770,6 +775,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-09-29",
+      "review": {
+        "score": 91,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/21276/the-witcher-3-wild-hunt-remastered/reviews"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000128692/20af2c89e26c59101263b2be7593e222093394d8a8d2b7385134da5afceed392",
@@ -794,12 +804,7 @@
         "Open World"
       ],
       "title": "The Witcher 3: Wild Hunt — Remastered",
-      "trailer": "",
-      "review": {
-        "score": 91,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/21276/the-witcher-3-wild-hunt-remastered/reviews"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000106161/00b2f5bdb14efcde0a589869fd25d2131430afe62113284767cc8584070c8c5a",
@@ -815,6 +820,11 @@
           "date": "2026-10-31",
           "note": "Price correction — verified $44.99",
           "price": 44.99
+        },
+        {
+          "date": "2026-11-02",
+          "note": "Price correction — eShop verified $49.99 for the Switch 2 Edition; $44.99 is the Switch 1 version price",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -824,11 +834,16 @@
         "url": "https://howlongtobeat.com/game/128035"
       },
       "id": "lollipop-chainsaw-repop-nintendo-switch-2-edition",
-      "lowestEver": 44.99,
+      "lowestEver": 49.99,
       "platform": "Switch 2",
-      "price": 44.99,
-      "regularPrice": 44.99,
+      "price": 49.99,
+      "regularPrice": 49.99,
       "releaseDate": "2026-05-28",
+      "review": {
+        "score": 64,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/17284/lollipop-chainsaw-repop"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000106161/06f9e5db852f82a1a54043123d4bb7d8500d2def9a69029913fbb7882e77d780",
@@ -853,12 +868,7 @@
         "Remaster"
       ],
       "title": "LOLLIPOP CHAINSAW RePOP Nintendo Switch 2 Edition",
-      "trailer": "",
-      "review": {
-        "score": 64,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/17284/lollipop-chainsaw-repop"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000128350/b601bd97eeaaf5c04ae5122fbd082bdd173586863e1d71f8628c2e36dc65b333",
@@ -883,6 +893,11 @@
       "price": 29.99,
       "regularPrice": 29.99,
       "releaseDate": "2026-08-13",
+      "review": {
+        "score": 79,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20919/duskfade"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000128350/3a944a73f6ccb7713b9d009d6298b3fbef84aad25f48fed2d21886fa7e67a297",
@@ -909,12 +924,7 @@
         "RPG"
       ],
       "title": "Duskfade",
-      "trailer": "",
-      "review": {
-        "score": 79,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20919/duskfade"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000131856/4ab1b5f167beab6dd67ff534a929e00923daa4d1d1cc600ac1a7f223ae8de471",
@@ -944,6 +954,11 @@
       "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-08-12",
+      "review": {
+        "score": 83,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/10830/everspace-2"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000131856/516a70c30092c6d26b3418217b5aaaf7e545241a68419c1457f3a61558820a77",
@@ -969,12 +984,7 @@
         "Bundle"
       ],
       "title": "EVERSPACE 2 - Galactic Edition",
-      "trailer": "",
-      "review": {
-        "score": 83,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/10830/everspace-2"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000015127/aaf834471a446c24bdda7087a365fd2a3b7b9ef3f2b6e8bc41849cf02f2b238f",
@@ -1004,6 +1014,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-12-09",
+      "review": {
+        "score": 71,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/12320/the-elder-scrolls-v-skyrim-anniversary-edition/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000015127/094f90717638a7b5c4e6324dd7d9379eee7b76f10f9afd27cae936f67f20c20d",
@@ -1029,12 +1044,7 @@
         "ESRB: Mature"
       ],
       "title": "The Elder Scrolls V: Skyrim Anniversary Edition",
-      "trailer": "",
-      "review": {
-        "score": 71,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/12320/the-elder-scrolls-v-skyrim-anniversary-edition/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000130414/91e7cbe2589797f53020e3304c3b86e53c4c671ed34881f1b949d4eedb1185be",
@@ -1133,6 +1143,11 @@
       "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-10-22",
+      "review": {
+        "score": 85,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20820/final-fantasy-resonance"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000117100/34ee79b147d6fba61ce74c4efb0f8ac42890765253280d21c90ba94093d403a6",
@@ -1157,12 +1172,7 @@
         "HD-2D"
       ],
       "title": "FINAL FANTASY RESONANCE",
-      "trailer": "",
-      "review": {
-        "score": 85,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20820/final-fantasy-resonance"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000118031/f23e83bd47a84d0d02afeb2b1a578dc45254de18b2f5b631478d9dbf82aab814",
@@ -1187,6 +1197,11 @@
       "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-10-09",
+      "review": {
+        "score": 85,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/21470/dragons-dogma-2-dark-arisen"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000118031/e755db74c780858a67bdf46aafbb53856d47b9ca867aa68f1360189f36f9fb6a",
@@ -1211,12 +1226,7 @@
         "Action"
       ],
       "title": "Dragon's Dogma 2: Dark Arisen",
-      "trailer": "",
-      "review": {
-        "score": 85,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/21470/dragons-dogma-2-dark-arisen"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103577/592a80257ab9f1d845e64bc18be21a07d5d06bd45437fd2b463108f228a7d9df",
@@ -1246,6 +1256,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-08-06",
+      "review": {
+        "score": 82,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/15437/lies-of-p/charts?ref=vgtimes"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103577/2b11b5790a0865b68ba9683aaeb1c4d00f5ffccd79817aac4fd5e250e5534138",
@@ -1271,12 +1286,7 @@
         "ESRB: Mature"
       ],
       "title": "Lies of P: Complete Edition",
-      "trailer": "wTmsnBEFuPs",
-      "review": {
-        "score": 82,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/15437/lies-of-p/charts?ref=vgtimes"
-      }
+      "trailer": "wTmsnBEFuPs"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000035447/d50322d01782c4a37441a92063064f8649f974234b8355235dfe60ab0f98b032",
@@ -1400,6 +1410,11 @@
       "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-08-11",
+      "review": {
+        "score": 81,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/18437/the-elder-scrolls-iv-oblivion-remastered/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103529/09eb6ebd27dc8328eabe6cff8cc1e2724ef459028db0ece05add9d29b6d567ab",
@@ -1424,12 +1439,7 @@
         "Action"
       ],
       "title": "The Elder Scrolls IV: Oblivion Remastered",
-      "trailer": "",
-      "review": {
-        "score": 81,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/18437/the-elder-scrolls-iv-oblivion-remastered/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000111542/02197d7f7c72aa7a6be2e59cd1b05deb881110d0fdba938815645b8fdf8b7bbc",
@@ -1502,6 +1512,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-06-23",
+      "review": {
+        "score": 88,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/6629/devil-may-cry-5"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000113876/d70add259c020967b903337ca58d4fe225498a7ae6e2c550bf8e5ac9f74a9402",
@@ -1525,12 +1540,7 @@
         "ESRB M"
       ],
       "title": "Devil May Cry 5 Devil Hunter Edition",
-      "trailer": "MOYl5Oz4nQk",
-      "review": {
-        "score": 88,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/6629/devil-may-cry-5"
-      }
+      "trailer": "MOYl5Oz4nQk"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000118137/9b7440699aa33b96d1a3ea967226d13711858f866360963463613a111d44ee47",
@@ -1555,6 +1565,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-10-08",
+      "review": {
+        "score": 69,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/8879/kingdom-hearts-iii-re-mind"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000118137/232490eda6303e072bac1dda9f6ebaa9d441714c03fb2c3539a85abccfe3629e",
@@ -1577,12 +1592,7 @@
         "Free demo"
       ],
       "title": "KINGDOM HEARTS III + Re Mind (DLC)",
-      "trailer": "JDrJsiXCBvA",
-      "review": {
-        "score": 69,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/8879/kingdom-hearts-iii-re-mind"
-      }
+      "trailer": "JDrJsiXCBvA"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000118131/31bceb61cb4b842e8f8841b2779b1ffd0452b1895c14c6ff0ca19947deac5b45",
@@ -1601,6 +1611,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-10-08",
+      "review": {
+        "score": 82,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/3602/kingdom-hearts-hd-1525-remix-english-ver/reviews?sort=newest&page=3"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000118131/5adfaea737c32d19d11a6fea3628df1055869f73b57d558a01411cbad8d0d928",
@@ -1624,12 +1639,7 @@
         "6 games in one"
       ],
       "title": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
-      "trailer": "qiE8hv-drXs",
-      "review": {
-        "score": 82,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/3602/kingdom-hearts-hd-1525-remix-english-ver/reviews?sort=newest&page=3"
-      }
+      "trailer": "qiE8hv-drXs"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000130289/763ada1052f5bf7b46b69a190f0646bc60f00b61f6b3a106a3f3331273194cb3",
@@ -1697,6 +1707,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-09-17",
+      "review": {
+        "score": 90,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20819/fire-emblem-fortunes-weave"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000126929/ff416413a2538f8e4076a8b60b0f831c75a1eb3892150ff6678f3ddedfe6ad0e",
@@ -1720,12 +1735,7 @@
         "Strategy RPG"
       ],
       "title": "Fire Emblem: Fortune's Weave",
-      "trailer": "kmF38S_0vPs",
-      "review": {
-        "score": 90,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20819/fire-emblem-fortunes-weave"
-      }
+      "trailer": "kmF38S_0vPs"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000125145/7ecd230cdcfb4b058c89270bdd84ee6ece79a18b07063bbc470ab2433def082a",
@@ -1750,6 +1760,11 @@
       "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-10-22",
+      "review": {
+        "score": 80,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20827/nintendo-switch-sports-resort"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000125145/7ecd230cdcfb4b058c89270bdd84ee6ece79a18b07063bbc470ab2433def082a",
@@ -1774,12 +1789,7 @@
         "Family"
       ],
       "title": "Nintendo Switch Sports Resort",
-      "trailer": "0tX12iFeM88",
-      "review": {
-        "score": 80,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20827/nintendo-switch-sports-resort"
-      }
+      "trailer": "0tX12iFeM88"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000098071/1a0152b5a5f033a2055858886af3c931f22ed8f4400fc2673b7a225336f419cd",
@@ -1848,6 +1858,11 @@
       "price": 24.99,
       "regularPrice": 24.99,
       "releaseDate": "2022-06-16",
+      "review": {
+        "score": 87,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/13252/teenage-mutant-ninja-turtles-shredders-revenge/reviews?page=9"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000039366/1537216410d78d991118c92de61d97e82be556ccf45429b6873f7aa1994e4830",
@@ -1872,12 +1887,7 @@
         "Pixel art"
       ],
       "title": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
-      "trailer": "ozKsDzumb0c",
-      "review": {
-        "score": 87,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/13252/teenage-mutant-ninja-turtles-shredders-revenge/reviews?page=9"
-      }
+      "trailer": "ozKsDzumb0c"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000113916/f9a46934a3bf9b37ff29c9c63a5ba30f237d32277263a29e59fdef471d8cbe23",
@@ -1902,6 +1912,11 @@
       "price": 19.99,
       "regularPrice": 19.99,
       "releaseDate": "2026-05-07",
+      "review": {
+        "score": 85,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20188/mixtape"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000113916/83ff273c2d375ea73073b00ad2be2bf9d8ebe3a907ab7ccf44e2513fc3c96fdd",
@@ -1926,12 +1941,7 @@
         "Soundtrack"
       ],
       "title": "Mixtape",
-      "trailer": "aQoEd5rnxiQ",
-      "review": {
-        "score": 85,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20188/mixtape"
-      }
+      "trailer": "aQoEd5rnxiQ"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/Marketing2/j7Kx2mPqR9nVwL4tYeB6cHsA3dFgNuZ0iOoW8vMkJXQ5rTb1CzEpDyG/outro/footer-img-2x.jpg",
@@ -1947,6 +1957,11 @@
           "date": "2026-11-01",
           "note": "Sale — ends Nov 12",
           "price": 42.99
+        },
+        {
+          "date": "2026-11-02",
+          "note": "Back to full price — eShop verified $49.99; the $42.99 price was a retailer digital-code deal, not an eShop sale",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -1958,10 +1973,15 @@
       "id": "star-fox",
       "lowestEver": 42.99,
       "platform": "Switch 2",
-      "price": 42.99,
+      "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-06-25",
-      "saleEnds": "2026-11-12",
+      "review": {
+        "score": 82,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20560/star-fox"
+      },
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000123167/acdd6b0d6e37582de62b66d9cefa1d48957e632a6d16fa971eeebaaaaa21f4f8",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000123167/6320f30f53fc45fb3e33f7ecb8ec33b4a952225d1836423d25569723a2133e5d",
@@ -1985,12 +2005,7 @@
         "Remake"
       ],
       "title": "Star Fox",
-      "trailer": "cWJR_d9gBZ4",
-      "review": {
-        "score": 82,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20560/star-fox"
-      }
+      "trailer": "cWJR_d9gBZ4"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000100072/45435d3b01ec02578669dcd1abc95a725f158c7009c5c61eb4d7850accf4cced",
@@ -2020,6 +2035,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-09-05",
+      "review": {
+        "score": 78,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19035/cronos-the-new-dawn"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000100072/deb8cbe80e68a9b8bc32506754723624d46f4f3e28e43df4f1487498540b15a8",
@@ -2045,12 +2065,7 @@
         "Survival horror"
       ],
       "title": "Cronos: The New Dawn",
-      "trailer": "cFdjztPVF4k",
-      "review": {
-        "score": 78,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19035/cronos-the-new-dawn"
-      }
+      "trailer": "cFdjztPVF4k"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_800/v1/store/software/switch2/70010000112012/8524a71e24a85cfd31187ed68dd6da762bc05a04e6d96b89f470ed1798fa2656",
@@ -2075,6 +2090,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-03-31",
+      "review": {
+        "score": 76,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/18309/18309/reviews?sort=score-high&page=5"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000112012/6275f0a2a5fa920e59b7aea7e10b3b4eaeae7c57de928f2818acfeb070133017",
@@ -2099,12 +2119,7 @@
         "ESRB M"
       ],
       "title": "South of Midnight Weaver's Edition",
-      "trailer": "V7vBVSeW3u4",
-      "review": {
-        "score": 76,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/18309/18309/reviews?sort=score-high&page=5"
-      }
+      "trailer": "V7vBVSeW3u4"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000115683/d676944fa794c1de2e203df75f76e1a21bdbd61893f44a22829a5cff93482e34",
@@ -2129,6 +2144,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-03-26",
+      "review": {
+        "score": 82,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/11516/Kena:%20Bridge%20of%20Spirits/reviews?sort=score-low&page=7"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000115683/4fa3fcda1b8175475d518cb2fb220d889b853a234eb596dc069fe7c32e90cb2c",
@@ -2153,12 +2173,7 @@
         "ESRB T"
       ],
       "title": "Kena: Bridge of Spirits",
-      "trailer": "Uljrg4__sRc",
-      "review": {
-        "score": 82,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/11516/Kena:%20Bridge%20of%20Spirits/reviews?sort=score-low&page=7"
-      }
+      "trailer": "Uljrg4__sRc"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000107421/ccb2d70f7ad6878b78d366898a0f0baf94a2d3350b76725c88b591453a797502",
@@ -2183,6 +2198,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-03-05",
+      "review": {
+        "score": 90,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19667/pok-mon-pokopia"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000107421/2045c3f67f865d333b1995562ad6b2894473b8a869e4c8efa01572539ec86019",
@@ -2207,12 +2227,7 @@
         "ESRB E"
       ],
       "title": "Pokémon Pokopia",
-      "trailer": "SDh6COB0Nqk",
-      "review": {
-        "score": 90,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19667/pok-mon-pokopia"
-      }
+      "trailer": "SDh6COB0Nqk"
     },
     {
       "banner": "https://images.nintendolife.com/e3e681307da17/1280x720.jpg",
@@ -2237,6 +2252,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-07-01",
+      "review": {
+        "score": 73,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19191/high-on-life-2/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103446/474618442661c341e435e11b4a8fe033543497c653f8b8f927b606dba9c50332",
@@ -2262,12 +2282,7 @@
         "ESRB M"
       ],
       "title": "High On Life 2",
-      "trailer": "GtTLjkB0vbo",
-      "review": {
-        "score": 73,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19191/high-on-life-2/charts"
-      }
+      "trailer": "GtTLjkB0vbo"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000115567/901218f8b149d63c90c125a3969db5f6d06f3a7cc649300b3e788116a21a84cd",
@@ -2292,6 +2307,11 @@
       "price": 79.99,
       "regularPrice": 79.99,
       "releaseDate": "2026-03-26",
+      "review": {
+        "score": 86,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20256/super-mario-bros-wonder-nintendo-switch-2-edition-meetup-in-bellabel-park/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000115567/4aa93d49df0b303aa66ceb72089848732345a299083c3046302cd93990ef4485",
@@ -2316,12 +2336,7 @@
         "ESRB E"
       ],
       "title": "Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park",
-      "trailer": "2rt5XAAeBb4",
-      "review": {
-        "score": 86,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20256/super-mario-bros-wonder-nintendo-switch-2-edition-meetup-in-bellabel-park/charts"
-      }
+      "trailer": "2rt5XAAeBb4"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000099153/5413317e516cfbe19cb0e61ded9dc183eb497d8f23e742de16a9fd82b54c3966",
@@ -2400,6 +2415,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-02-24",
+      "review": {
+        "score": 87,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/1508/fallout-4/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101067/860d9c129fd0f72a58750ac617fd896d678d617eac143f469e90006b596c2274",
@@ -2425,12 +2445,7 @@
         "ESRB Mature"
       ],
       "title": "Fallout 4: Anniversary Edition",
-      "trailer": "W1H0px7leEk",
-      "review": {
-        "score": 87,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/1508/fallout-4/charts"
-      }
+      "trailer": "W1H0px7leEk"
     },
     {
       "banner": "https://images.nintendolife.com/7105afbc53043/1280x720.jpg",
@@ -2455,6 +2470,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2025-08-28",
+      "review": {
+        "score": 69,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/13964/high-on-life"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000104842/002ad18ada04534cff88a73876ad578625719b74d2d579fd49023a958011cce0",
@@ -2480,12 +2500,7 @@
         "ESRB Mature"
       ],
       "title": "High On Life: Nintendo Switch 2 Edition",
-      "trailer": "8i2vvu-qeBQ",
-      "review": {
-        "score": 69,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/13964/high-on-life"
-      }
+      "trailer": "8i2vvu-qeBQ"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000095417/f0354775ff98c5321fb6cab8e35c721118fa2f7eab7197b85d526c1e921c275e",
@@ -2510,6 +2525,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-06-05",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/13898/hogwarts-legacy"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000095417/6600882171c1d20624de336147d69f72ea7faf632bc41b621f0307a454a6073b",
@@ -2535,12 +2555,7 @@
         "ESRB Teen"
       ],
       "title": "Hogwarts Legacy",
-      "trailer": "oiSR8gz_7gQ",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/13898/hogwarts-legacy"
-      }
+      "trailer": "oiSR8gz_7gQ"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000116669/e3a47e05c84440b18532c08e6348e355c675cf2b1f4a79c8a4f074d5736aa9f9",
@@ -2565,6 +2580,11 @@
       "price": 64.99,
       "regularPrice": 64.99,
       "releaseDate": "2026-02-19",
+      "review": {
+        "score": 80,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20139/xenoblade-chronicles-x-definitive-edition-nintendo-switch-2-edition/reviews?page=1"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000116669/cf89a09a2e24b67b52886809a6f5e7c0759b4dcd9e5e2c20c2f1b5de30331fc5",
@@ -2589,12 +2609,7 @@
         "ESRB T"
       ],
       "title": "Xenoblade Chronicles X: Definitive Edition – Nintendo Switch 2 Edition",
-      "trailer": "LC0XfI25wro",
-      "review": {
-        "score": 80,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20139/xenoblade-chronicles-x-definitive-edition-nintendo-switch-2-edition/reviews?page=1"
-      }
+      "trailer": "LC0XfI25wro"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000112477/99d3f9086b7b97984916c93456752d6981d56dcab942421cf71cd45836a62b72",
@@ -2605,6 +2620,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 49.99
+        },
+        {
+          "date": "2026-11-02",
+          "note": "Sale — ends Nov 16",
+          "price": 7.49
         }
       ],
       "hltb": {
@@ -2614,12 +2634,17 @@
         "url": "https://howlongtobeat.com/game/109434"
       },
       "id": "final-fantasy-vii-rebirth",
-      "lowestEver": 49.99,
+      "lowestEver": 7.49,
       "platform": "Switch 2",
-      "price": 49.99,
+      "price": 7.49,
       "regularPrice": 49.99,
       "releaseDate": "2026-06-03",
-      "saleEnds": null,
+      "review": {
+        "score": 91,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/15136/-/reviews?sort=popularity&page=4"
+      },
+      "saleEnds": "2026-11-16",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000112477/dcd91fed263b37c5cba3d0f6cb85da95a5e06f8e2aece1bba4e4f5a9402a3e51",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000112477/cf340c61911f166b8bede7891ef6cb24af418dd2a21ffa3f7fb2185ed743fe64",
@@ -2643,12 +2668,7 @@
         "ESRB T"
       ],
       "title": "FINAL FANTASY VII REBIRTH",
-      "trailer": "4i5JJ5auooo",
-      "review": {
-        "score": 91,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/15136/-/reviews?sort=popularity&page=4"
-      }
+      "trailer": "4i5JJ5auooo"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101043/27e7c0866bfdf82d63a1486122e2dff215a5604794b7c8311256fb5d60a650b0",
@@ -2673,6 +2693,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-12-02",
+      "review": {
+        "score": 81,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/16792/assassins-creed-shadows"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101043/a84d3fc77995ec699dc770fe1a3b2e5dc2aa3521c0d9e8c130f51d5c30b60678",
@@ -2697,12 +2722,7 @@
         "ESRB M"
       ],
       "title": "Assassin's Creed Shadows",
-      "trailer": "OzyD_EFZzgc",
-      "review": {
-        "score": 81,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/16792/assassins-creed-shadows"
-      }
+      "trailer": "OzyD_EFZzgc"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000063709/32b85837beea0eee31220a59e247219662de4011f7a8c18fce61cf99a4933eb7",
@@ -2727,6 +2747,11 @@
       "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2023-02-08",
+      "review": {
+        "score": 94,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/14280/metroid-prime-remastered/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000063709/173948748bc658aaf30af38260c40a93b721278b74536ac6f962a19352ddd82b",
@@ -2752,12 +2777,7 @@
         "ESRB T"
       ],
       "title": "Metroid Prime Remastered",
-      "trailer": "",
-      "review": {
-        "score": 94,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/14280/metroid-prime-remastered/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://img-eshop.cdn.nintendo.net/i/5310a7e63ba9c18085961535093ad7070baff56e331f8646a0a32229e16ceabd.jpg",
@@ -2782,6 +2802,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2022-10-28",
+      "review": {
+        "score": 85,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/13466/bayonetta-3"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000046400/342e440e7c9765e8460d9f42b916575878eded0686757fcfc4a9e375e05b8412",
@@ -2807,12 +2832,7 @@
         "ESRB M"
       ],
       "title": "Bayonetta 3",
-      "trailer": "QqCzwycvR74",
-      "review": {
-        "score": 85,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/13466/bayonetta-3"
-      }
+      "trailer": "QqCzwycvR74"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000068683/dad2dfa044f3b1809bfb65e0145f824e25d2a363e446a142b5d46b27766463ea",
@@ -2837,6 +2857,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2023-11-17",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/15131/super-mario-rpg/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000068683/dad2dfa044f3b1809bfb65e0145f824e25d2a363e446a142b5d46b27766463ea",
@@ -2861,12 +2886,7 @@
         "ESRB E"
       ],
       "title": "Super Mario RPG",
-      "trailer": "",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/15131/super-mario-rpg/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000064132/cf6a52d93890df44059d7ba1376beec19155112c7b9cff000ba10eabea0f6ecd",
@@ -2891,6 +2911,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2023-04-21",
+      "review": {
+        "score": 81,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/14513/advance-wars-1-2-re-boot-camp"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000064132/b1396b6df591119d3e90f80966c9f05f3599a725a9cd627340c9dcb5f42c9f2b",
@@ -2915,12 +2940,7 @@
         "ESRB E10+"
       ],
       "title": "Advance Wars 1+2: Re-Boot Camp",
-      "trailer": "",
-      "review": {
-        "score": 81,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/14513/advance-wars-1-2-re-boot-camp"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000104849/6bc40d5d63f7139f26f29c3d0d9b82dbcbae85e2bebcd2995d39c991e665c802",
@@ -2945,6 +2965,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2025-12-04",
+      "review": {
+        "score": 80,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/16868/metroid-prime-4-beyond"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000104849/18acd13b8c65149036c31d517c873d07d620f6c5e580a11ab1fe1d30da5362be",
@@ -2970,12 +2995,7 @@
         "ESRB T"
       ],
       "title": "Metroid Prime 4: Beyond – Nintendo Switch 2 Edition",
-      "trailer": "",
-      "review": {
-        "score": 80,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/16868/metroid-prime-4-beyond"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://img-eshop.cdn.nintendo.net/i/770dc64c402c949be24c2cfe319cfd0eb4181ec18c7077122d8deaedbf6e23d5.jpg?w=1000",
@@ -3000,6 +3020,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2025-10-16",
+      "review": {
+        "score": 79,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/18645/pokemon-legends-z-a"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099365/2e7d078047006329502fb48be7989ca7e699d9805c03527523a47bb3235ff86a",
@@ -3025,12 +3050,7 @@
         "ESRB E10+"
       ],
       "title": "Pokémon Legends: Z-A – Nintendo Switch 2 Edition",
-      "trailer": "",
-      "review": {
-        "score": 79,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/18645/pokemon-legends-z-a"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000098990/78759e8c3ad458d67d31fae6519a364ef6eb6eda9d9dcebb19b72e7aa48290e0",
@@ -3041,6 +3061,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 59.99
+        },
+        {
+          "date": "2026-11-02",
+          "note": "Sale — ends Nov 16",
+          "price": 38.99
         }
       ],
       "hltb": {
@@ -3050,12 +3075,17 @@
         "url": null
       },
       "id": "dragon-quest-vii-reimagined",
-      "lowestEver": 59.99,
+      "lowestEver": 38.99,
       "platform": "Switch 2",
-      "price": 59.99,
+      "price": 38.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-02-05",
-      "saleEnds": null,
+      "review": {
+        "score": 83,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19296/dragon-quest-vii-reimagined"
+      },
+      "saleEnds": "2026-11-16",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098990/a90948e38c198761c4ac2dccb24bb6807c7b2bdd92f48a407d81fd62cece44af",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098990/d1c4e4cad274d5759cf75a05908cd3b47f77768bfdc812c9aa6c5ae08f63b379",
@@ -3079,12 +3109,7 @@
         "ESRB E10+"
       ],
       "title": "DRAGON QUEST VII Reimagined",
-      "trailer": "",
-      "review": {
-        "score": 83,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19296/dragon-quest-vii-reimagined"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000096809/3c8219fbdcd3bdd0ebd6239cf32c651fe10f2157aa7730fcc6a7d96cd27460e5",
@@ -3109,6 +3134,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2025-07-17",
+      "review": {
+        "score": 91,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/18340/donkey-kong-bananza"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000096809/c111819ae2b07f446ab92d64c8d37e9ef8e541e30b687121fa6d5976096b61f9",
@@ -3135,12 +3165,7 @@
         "ESRB E10+"
       ],
       "title": "Donkey Kong Bananza",
-      "trailer": "",
-      "review": {
-        "score": 91,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/18340/donkey-kong-bananza"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70070000030770/0acaf709e29c57e125e90032853562562843757d238fec2815a52ec0409c6fd1",
@@ -3159,6 +3184,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2025-10-02",
+      "review": {
+        "score": 87,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19299/super-mario-galaxy-super-mario-galaxy-2"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000030770/076acf13b378125791d6731ed45cbecc825abb448cc0811200ec8233802c644e",
@@ -3185,12 +3215,7 @@
         "ESRB E"
       ],
       "title": "Super Mario Galaxy + Super Mario Galaxy 2",
-      "trailer": "",
-      "review": {
-        "score": 87,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19299/super-mario-galaxy-super-mario-galaxy-2"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000098812/7579bbf8c30a30703291f02516dab590f4583fb72b23d75287772feeaefaec33",
@@ -3220,6 +3245,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-05-12",
+      "review": {
+        "score": 86,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/17732/indiana-jones-and-the-great-circle"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098812/7b5eb76420611e5b0c31e4a17e4bfcb0b1a0290770cb725faa1aa584a62c29d9",
@@ -3244,12 +3274,7 @@
         "Adventure"
       ],
       "title": "Indiana Jones and the Great Circle",
-      "trailer": "",
-      "review": {
-        "score": 86,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/17732/indiana-jones-and-the-great-circle"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/fa273ddab46dfa870047000f4bc920d3d77e0f242064037971ac717416048a2d",
@@ -3274,6 +3299,11 @@
       "price": 29.99,
       "regularPrice": 29.99,
       "releaseDate": "2026-01-28",
+      "review": {
+        "score": 87,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19505/game/reviews?sort=newest"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/1b704f6b17d318c7d284859d08863ea0ea0816a22f38258a525bf4bc21fb73a0",
@@ -3298,12 +3328,7 @@
         "Adventure"
       ],
       "title": "Dispatch – Nintendo Switch 2 Edition",
-      "trailer": "",
-      "review": {
-        "score": 87,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19505/game/reviews?sort=newest"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000115859/b6a70a65ef1c26637e54c2c855142815ed618f836d5c2c16f2235eed8b81448d",
@@ -3371,6 +3396,11 @@
       "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-08-27",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/20107/metal-gear-solid-master-collection-vol-2/reviews"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70070000033532/120739d4d836ff03109861571a2dfb52506d747d35da939438a3c508688ccd86",
@@ -3396,12 +3426,7 @@
         "ESRB M"
       ],
       "title": "METAL GEAR SOLID: MASTER COLLECTION Vol.2",
-      "trailer": "",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/20107/metal-gear-solid-master-collection-vol-2/reviews"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000099705/1a97532158b654a9be624b8ebf9fdbaa92bc07eb8a4a63066f7183b61dfe519e",
@@ -3426,6 +3451,11 @@
       "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2026-09-18",
+      "review": {
+        "score": 84,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/19919/lego-batman-legacy-of-the-dark-knight"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099705/80c5ee893d7c57362e8944a2f79729d4707a5b6b804b69f4e14b9470624e2879",
@@ -3451,12 +3481,7 @@
         "Open world"
       ],
       "title": "LEGO Batman: Legacy of the Dark Knight",
-      "trailer": "",
-      "review": {
-        "score": 84,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/19919/lego-batman-legacy-of-the-dark-knight"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000020033/df825d5fc6747b66b051f5d3ba6a412fe625ea7878b6a10c93bb8312195682b1",
@@ -3481,6 +3506,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2019-09-20",
+      "review": {
+        "score": 87,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/7871/-"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000020033/90a52983d8edc9971cda75e544b0e386bcd13f6660c0f15e98aec169a2ebda2d",
@@ -3506,12 +3536,7 @@
         "ESRB E"
       ],
       "title": "The Legend of Zelda: Link's Awakening",
-      "trailer": "",
-      "review": {
-        "score": 87,
-        "source": "OpenCritic",
-        "url": "https://opencritic.com/game/7871/-"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000084618/e3a49cf14180cec09c515595fb7121b048a0f8327eae2d248909d0f0c64a9dc9",
@@ -3536,6 +3561,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2024-09-26",
+      "review": {
+        "score": 85,
+        "source": "OpenCritic",
+        "url": "http://opencritic.com/game/16869/the-legend-of-zelda-echoes-of-wisdom/charts"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000084618/543225e14908b5824cf0fae913f7e1389f0e07edebfed77da4dafd1d8dd4acbd",
@@ -3561,12 +3591,7 @@
         "ESRB E10+"
       ],
       "title": "The Legend of Zelda: Echoes of Wisdom",
-      "trailer": "",
-      "review": {
-        "score": 85,
-        "source": "OpenCritic",
-        "url": "http://opencritic.com/game/16869/the-legend-of-zelda-echoes-of-wisdom/charts"
-      }
+      "trailer": ""
     },
     {
       "banner": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/62/4e/23624ed4-cca5-9872-cd88-9a0fd76bf8a6/2208x1242-EN.jpg/1242x699bb.jpg",
@@ -3656,5 +3681,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-01"
+  "updated": "2026-11-02"
 }
