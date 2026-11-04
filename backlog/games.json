@@ -1,7 +1,7 @@
 {
   "games": [
     {
-      "alertNote": "Your $24 watch hit on Oct 28 — this is the game's first tracked sale.",
+      "alertNote": "Your $24 watch hit on Oct 28 \u2014 this is the game's first tracked sale.",
       "banner": "https://sce.scene7.com/is/image/playstation/pcjs50009_banner?$bnr$",
       "boxart": "https://clzgames.r.sizr.io/core/covers/lg/9a/origin:jpg/9a_96144_0_NoMansSky.webp",
       "description": "Explore, build, and fly in a procedurally generated universe.",
@@ -18,7 +18,7 @@
         },
         {
           "date": "2026-10-28",
-          "note": "Sale — ends Nov 12 · alert sent",
+          "note": "Sale \u2014 ends Nov 12 \u00b7 alert sent",
           "price": 23.99
         }
       ],
@@ -51,7 +51,7 @@
         "extra": "Hello Games",
         "extraLabel": "PUBLISHER",
         "genre": "Adventure / RPG",
-        "players": "1 · online 1–4",
+        "players": "1 \u00b7 online 1\u20134",
         "size": "30.2 GB",
         "sizeGB": 30.2
       },
@@ -65,7 +65,7 @@
       "trailer": "cgYYQwHuh-Y"
     },
     {
-      "alertNote": "Your alert: any drop below $74.99. No sales yet — the first discount gets flagged the day it lands.",
+      "alertNote": "Your alert: any drop below $74.99. No sales yet \u2014 the first discount gets flagged the day it lands.",
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118137/9b7440699aa33b96d1a3ea967226d13711858f866360963463613a111d44ee47",
       "boxart": "https://cdn.dekudeals.com/images/14e120c28844562c2d15f121afb87bff8931c08d/w540.jpg",
       "description": "The whole saga natively on Switch 2: HD 1.5+2.5 ReMIX, HD 2.8 Final Chapter Prologue, and Kingdom Hearts III + Re Mind. The three apps install separately, so you only download the part you're playing.",
@@ -77,7 +77,7 @@
         },
         {
           "date": "2026-10-29",
-          "note": "Tracking started · no sales yet",
+          "note": "Tracking started \u00b7 no sales yet",
           "price": 74.99
         }
       ],
@@ -114,11 +114,11 @@
         "Digital",
         "7 games in one"
       ],
-      "title": "Kingdom Hearts Collection I–III",
+      "title": "Kingdom Hearts Collection I\u2013III",
       "trailer": "Ky4m8IuDFRM"
     },
     {
-      "alertNote": "Launch price. Early reviews call it one of the best mobile ports of the year — smooth 60 FPS, runs warm.",
+      "alertNote": "Launch price. Early reviews call it one of the best mobile ports of the year \u2014 smooth 60 FPS, runs warm.",
       "banner": "https://ilarge.lisimg.com/image/22768267/740full-saints-row%3A-the-third----remastered-cover.jpg",
       "bannerPosition": "center 22%",
       "boxart": "https://ilarge.lisimg.com/image/22768267/740full-saints-row%3A-the-third----remastered-cover.jpg",
@@ -156,10 +156,10 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d2/52/14/d2521457-c361-9010-0624-7b4a3e4e2077/02fBobWork_U002fsaintsrow3_U002fGameData_U002fSaintsRow3_U002fProduction_U002fArtwork_U002f_U002f_U002fScreenshots_U002fScreenshot_iOS-6.9-in_5_EN.png/1920x1080bb.jpg"
       ],
       "specs": {
-        "extra": "iOS 18 · A12 or later",
+        "extra": "iOS 18 \u00b7 A12 or later",
         "extraLabel": "REQUIRES",
         "genre": "Open-world action",
-        "players": "1 · 2-player co-op",
+        "players": "1 \u00b7 2-player co-op",
         "size": "20.8 GB",
         "sizeGB": 20.8
       },
@@ -175,7 +175,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/ncom/en_US/games/switch/p/pokemon-brilliant-diamond-switch/screenshot-gallery/screenshot01",
       "boxart": "https://cdn.dekudeals.com/images/b7ec00dd8b6f56f8477d16960ee192c3b88727db/w540.jpg",
-      "description": "Welcome to the Sinnoh region! Choose Turtwig, Chimchar, or Piplup and journey to become Pokémon League Champion — running into the mysterious Team Galactic and the Legendary Pokémon Dialga along the way, and exploring the Grand Underground.",
+      "description": "Welcome to the Sinnoh region! Choose Turtwig, Chimchar, or Piplup and journey to become Pok\u00e9mon League Champion \u2014 running into the mysterious Team Galactic and the Legendary Pok\u00e9mon Dialga along the way, and exploring the Grand Underground.",
       "history": [
         {
           "date": "2026-10-29",
@@ -220,15 +220,15 @@
       "store": "Nintendo eShop",
       "storeUrl": "https://www.nintendo.com/us/store/products/pokemon-brilliant-diamond-us-114287/",
       "tags": [
-        "Pokémon"
+        "Pok\u00e9mon"
       ],
-      "title": "Pokémon Brilliant Diamond",
+      "title": "Pok\u00e9mon Brilliant Diamond",
       "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000118613/86f3c6d4e129d185cbbc441169856733dea45ff231446a4edf5fec4624041849",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch/70010000118613/86f3c6d4e129d185cbbc441169856733dea45ff231446a4edf5fec4624041849",
-      "description": "Celebrate 30 years of Pokémon with this Nintendo Switch version of the Game Boy Advance classic — a standalone eShop release that includes the Sevii Islands and in-game events to encounter the Legendary and Mythical Pokémon Lugia, Ho-Oh, and Deoxys.",
+      "description": "Celebrate 30 years of Pok\u00e9mon with this Nintendo Switch version of the Game Boy Advance classic \u2014 a standalone eShop release that includes the Sevii Islands and in-game events to encounter the Legendary and Mythical Pok\u00e9mon Lugia, Ho-Oh, and Deoxys.",
       "history": [
         {
           "date": "2026-10-29",
@@ -273,16 +273,16 @@
       "store": "Nintendo eShop",
       "storeUrl": "https://www.nintendo.com/us/store/products/english-pokemon-firered-version-switch/",
       "tags": [
-        "Pokémon",
+        "Pok\u00e9mon",
         "RPG"
       ],
-      "title": "Pokémon FireRed Version",
+      "title": "Pok\u00e9mon FireRed Version",
       "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000131244/e1cee27abac1f6e16e9f7454fa1413fb2742e2dbe96f343ab2ed1b423ceccfb4",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000131244/e1cee27abac1f6e16e9f7454fa1413fb2742e2dbe96f343ab2ed1b423ceccfb4",
-      "description": "Fight through Mordor and test your skills against Sauron's forces in the Game of the Year Edition — the base game plus all Season Pass content (Lord of the Hunt, The Bright Lord, and more), powered by the Nemesis System, where enemies remember your every encounter.",
+      "description": "Fight through Mordor and test your skills against Sauron's forces in the Game of the Year Edition \u2014 the base game plus all Season Pass content (Lord of the Hunt, The Bright Lord, and more), powered by the Nemesis System, where enemies remember your every encounter.",
       "history": [
         {
           "date": "2026-10-29",
@@ -391,7 +391,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000110905/943ac82193671174ecae54dabc8c85897b561153d830d86ac288476d3a9d02e4",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000110905/943ac82193671174ecae54dabc8c85897b561153d830d86ac288476d3a9d02e4",
-      "description": "Drop the pickaxe, grab a sword, and charge into a thrilling new adventure in Minecraft Dungeons II — journey through unexplored lands solo or with up to 4 players in online or couch co-op to stop a new evil from causing chaos in not one, but two worlds.",
+      "description": "Drop the pickaxe, grab a sword, and charge into a thrilling new adventure in Minecraft Dungeons II \u2014 journey through unexplored lands solo or with up to 4 players in online or couch co-op to stop a new evil from causing chaos in not one, but two worlds.",
       "history": [
         {
           "date": "2026-10-29",
@@ -428,7 +428,7 @@
         "extra": "Mojang",
         "extraLabel": "PUBLISHER",
         "genre": "RPG, Action",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "6.1 GB",
         "sizeGB": 6.1
       },
@@ -446,7 +446,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000106970/e6d0ed2d93e9cf649b0aa1771a859ff5ac2755486c4fb6934c8775ce95faafb5",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000106970/e6d0ed2d93e9cf649b0aa1771a859ff5ac2755486c4fb6934c8775ce95faafb5",
-      "description": "The HD remaster of the beloved FINAL FANTASY VII prequel, rebuilt for Nintendo Switch 2. Follow Zack Fair, a young SOLDIER operative whose tale of dreams and honor connects him to Cloud — with fully remastered graphics, fully voiced dialogue, and a newly arranged soundtrack.",
+      "description": "The HD remaster of the beloved FINAL FANTASY VII prequel, rebuilt for Nintendo Switch 2. Follow Zack Fair, a young SOLDIER operative whose tale of dreams and honor connects him to Cloud \u2014 with fully remastered graphics, fully voiced dialogue, and a newly arranged soundtrack.",
       "history": [
         {
           "date": "2026-10-29",
@@ -455,7 +455,7 @@
         },
         {
           "date": "2026-11-02",
-          "note": "Sale — ends Nov 16",
+          "note": "Sale \u2014 ends Nov 16",
           "price": 29.99
         }
       ],
@@ -499,13 +499,13 @@
         "Action RPG",
         "Final Fantasy"
       ],
-      "title": "CRISIS CORE –FINAL FANTASY VII– REUNION",
+      "title": "CRISIS CORE \u2013FINAL FANTASY VII\u2013 REUNION",
       "trailer": "Af6f-KvBwLU"
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000122497/beee3d58ac46f78bc26f7584bcaed50a645af2262d6581791a0381aaf56392c7",
       "boxart": "https://cdn.dekudeals.com/images/5f55caccffbdc05f49f3125263042f48c8b74a5b/w540.jpg",
-      "description": "Leon S. Kennedy's mission to rescue the president's daughter, in the Gold Edition — includes the Separate Ways story DLC, The Mercenaries mode, Treasure Map: Expansion, and bonus costumes and weapons.",
+      "description": "Leon S. Kennedy's mission to rescue the president's daughter, in the Gold Edition \u2014 includes the Separate Ways story DLC, The Mercenaries mode, Treasure Map: Expansion, and bonus costumes and weapons.",
       "history": [
         {
           "date": "2026-10-29",
@@ -561,7 +561,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Software/Metroid%20Ravenous/125700-125701-nintendo-switch-2-metroid-ravenous-ss-1-1280x720",
       "boxart": "https://cdn.dekudeals.com/images/59d9ed382f4aef7b61a8bcbc39c5dd8ceaf7838b/w540.jpg",
-      "description": "It's eat or be eaten! Samus Aran is ambushed by unknown attackers and marooned on an unfamiliar moon — gather your arsenal, navigate a maze of corridors, hunt down powerful bosses, and use your newly awakened Metroid instincts to devour your foes.",
+      "description": "It's eat or be eaten! Samus Aran is ambushed by unknown attackers and marooned on an unfamiliar moon \u2014 gather your arsenal, navigate a maze of corridors, hunt down powerful bosses, and use your newly awakened Metroid instincts to devour your foes.",
       "history": [
         {
           "date": "2026-10-29",
@@ -591,7 +591,7 @@
         "size": "20.2 GB",
         "sizeGB": 20.2
       },
-      "statusNote": "Pre-order · releases Jan 28, 2027",
+      "statusNote": "Pre-order \u00b7 releases Jan 28, 2027",
       "store": "Nintendo eShop",
       "storeUrl": "https://www.nintendo.com/us/store/products/metroid-ravenous-125700/",
       "tags": [
@@ -604,7 +604,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000135065/fe13a7b668404d0b6d22b7487db300ec877e75ac158e1b94c48518c1e41d90d9",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000135065/fe13a7b668404d0b6d22b7487db300ec877e75ac158e1b94c48518c1e41d90d9",
-      "description": "Freely explore and traverse an expansive world with Kirby's powered-up Copy Abilities — rescue a mysterious girl from King Dedede and uncover what waits beyond a peculiar wall. Developed by HAL Laboratory.",
+      "description": "Freely explore and traverse an expansive world with Kirby's powered-up Copy Abilities \u2014 rescue a mysterious girl from King Dedede and uncover what waits beyond a peculiar wall. Developed by HAL Laboratory.",
       "history": [
         {
           "date": "2026-10-29",
@@ -684,7 +684,7 @@
         "extra": "Activision",
         "extraLabel": "PUBLISHER",
         "genre": "Shooting, Action",
-        "players": "1–12",
+        "players": "1\u201312",
         "size": "19.4 GB",
         "sizeGB": 19.4
       },
@@ -701,7 +701,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000107220/624bf6d24ca57655a499f80d566683744892a5c28f8e37de333cba4a12054fb7",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000107220/624bf6d24ca57655a499f80d566683744892a5c28f8e37de333cba4a12054fb7",
-      "description": "Five years after the Big Shell incident, war has become a business run by private military companies — an aging Solid Snake sets out on a final mission to assassinate Liquid Ocelot. Includes the Screenplay Book, Master Book, and MGS4 Database.",
+      "description": "Five years after the Big Shell incident, war has become a business run by private military companies \u2014 an aging Solid Snake sets out on a final mission to assassinate Liquid Ocelot. Includes the Screenplay Book, Master Book, and MGS4 Database.",
       "history": [
         {
           "date": "2026-10-29",
@@ -749,13 +749,13 @@
         "Stealth",
         "ESRB: Mature"
       ],
-      "title": "METAL GEAR SOLID 4: Guns of the Patriots — Master Collection Version",
+      "title": "METAL GEAR SOLID 4: Guns of the Patriots \u2014 Master Collection Version",
       "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000128692/da1a51c79e918768af5d1556e7416c0bc906665606fd273622ecbbd5cc8cfa26",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000128692/da1a51c79e918768af5d1556e7416c0bc906665606fd273622ecbbd5cc8cfa26",
-      "description": "Geralt of Rivia's monster-hunting epic, rebuilt for Nintendo Switch 2 — includes the Hearts of Stone and Blood and Wine expansions, a rebuilt skill tree, transmog, and cross-platform mod support.",
+      "description": "Geralt of Rivia's monster-hunting epic, rebuilt for Nintendo Switch 2 \u2014 includes the Hearts of Stone and Blood and Wine expansions, a rebuilt skill tree, transmog, and cross-platform mod support.",
       "history": [
         {
           "date": "2026-10-29",
@@ -803,7 +803,7 @@
         "RPG",
         "Open World"
       ],
-      "title": "The Witcher 3: Wild Hunt — Remastered",
+      "title": "The Witcher 3: Wild Hunt \u2014 Remastered",
       "trailer": ""
     },
     {
@@ -818,12 +818,12 @@
         },
         {
           "date": "2026-10-31",
-          "note": "Price correction — verified $44.99",
+          "note": "Price correction \u2014 verified $44.99",
           "price": 44.99
         },
         {
           "date": "2026-11-02",
-          "note": "Price correction — eShop verified $49.99 for the Switch 2 Edition; $44.99 is the Switch 1 version price",
+          "note": "Price correction \u2014 eShop verified $49.99 for the Switch 2 Edition; $44.99 is the Switch 1 version price",
           "price": 49.99
         }
       ],
@@ -938,7 +938,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 49.99
         }
       ],
@@ -998,7 +998,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 59.99
         }
       ],
@@ -1049,7 +1049,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000130414/91e7cbe2589797f53020e3304c3b86e53c4c671ed34881f1b949d4eedb1185be",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000130414/91e7cbe2589797f53020e3304c3b86e53c4c671ed34881f1b949d4eedb1185be",
-      "description": "A remake of 2000's Resident Evil – Code: Veronica that preserves the essence of the original while introducing modernized gameplay, a reimagined storyline, and vividly detailed graphics. Three months after Raccoon City, Claire Redfield is captured and taken to Rockfort Island, now a living hellscape of survival horror.",
+      "description": "A remake of 2000's Resident Evil \u2013 Code: Veronica that preserves the essence of the original while introducing modernized gameplay, a reimagined storyline, and vividly detailed graphics. Three months after Raccoon City, Claire Redfield is captured and taken to Rockfort Island, now a living hellscape of survival horror.",
       "history": [
         {
           "date": "2026-10-29",
@@ -1129,7 +1129,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000117100/f32f745bc141f4b1f238254f9710c4269b26e315307b3263e558b20ef2c331ac",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000117100/f32f745bc141f4b1f238254f9710c4269b26e315307b3263e558b20ef2c331ac",
-      "description": "The first FINAL FANTASY to join the HD-2D lineup: return to the pixel-art world of FINAL FANTASY, evolved from its classic roots. Travel with companions bound by fate and call on Visions — echoes of beloved FINAL FANTASY characters — to uncover the truth behind a force that threatens to bring everything to ruin.",
+      "description": "The first FINAL FANTASY to join the HD-2D lineup: return to the pixel-art world of FINAL FANTASY, evolved from its classic roots. Travel with companions bound by fate and call on Visions \u2014 echoes of beloved FINAL FANTASY characters \u2014 to uncover the truth behind a force that threatens to bring everything to ruin.",
       "history": [
         {
           "date": "2026-10-29",
@@ -1177,7 +1177,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000118031/f23e83bd47a84d0d02afeb2b1a578dc45254de18b2f5b631478d9dbf82aab814",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000118031/f23e83bd47a84d0d02afeb2b1a578dc45254de18b2f5b631478d9dbf82aab814",
-      "description": "The Switch 2 version contains both the Dragon's Dogma 2 base game and the Dark Arisen Expansion in one package. Set off with your loyal Pawns on a single-player action-fantasy RPG adventure, enhanced with new tales — including the snowy northern region of Norgan — and thrilling encounters.",
+      "description": "The Switch 2 version contains both the Dragon's Dogma 2 base game and the Dark Arisen Expansion in one package. Set off with your loyal Pawns on a single-player action-fantasy RPG adventure, enhanced with new tales \u2014 including the snowy northern region of Norgan \u2014 and thrilling encounters.",
       "history": [
         {
           "date": "2026-10-29",
@@ -1240,7 +1240,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 69.99
         }
       ],
@@ -1317,7 +1317,7 @@
         "extra": "Zen Studios",
         "extraLabel": "PUBLISHER",
         "genre": "Simulation, Arcade",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "481 MB",
         "sizeGB": null
       },
@@ -1371,7 +1371,7 @@
         "size": "27 GB",
         "sizeGB": 27
       },
-      "statusNote": "Pre-order · releases Nov 5, 2026",
+      "statusNote": "Pre-order \u00b7 releases Nov 5, 2026",
       "store": "Nintendo eShop",
       "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
       "tags": [
@@ -1394,7 +1394,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 49.99
         }
       ],
@@ -1453,7 +1453,7 @@
         },
         {
           "date": "2026-10-31",
-          "note": "Pre-order opened — $39.99 Standard Edition",
+          "note": "Pre-order opened \u2014 $39.99 Standard Edition",
           "price": 39.99
         }
       ],
@@ -1475,7 +1475,7 @@
         "extra": "Ubisoft",
         "extraLabel": "PUBLISHER",
         "genre": "Platformer",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "23.4 GB",
         "sizeGB": 23.4
       },
@@ -1597,7 +1597,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000118131/31bceb61cb4b842e8f8841b2779b1ffd0452b1895c14c6ff0ca19947deac5b45",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000118131/31bceb61cb4b842e8f8841b2779b1ffd0452b1895c14c6ff0ca19947deac5b45",
-      "description": "An essential collection of the first six KINGDOM HEARTS stories — from KINGDOM HEARTS FINAL MIX to Birth by Sleep — in one Switch 2 package.",
+      "description": "An essential collection of the first six KINGDOM HEARTS stories \u2014 from KINGDOM HEARTS FINAL MIX to Birth by Sleep \u2014 in one Switch 2 package.",
       "history": [
         {
           "date": "2026-10-29",
@@ -1740,7 +1740,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000125145/7ecd230cdcfb4b058c89270bdd84ee6ece79a18b07063bbc470ab2433def082a",
       "boxart": "https://cdn.dekudeals.com/images/732d162cfaab7e7e54d14a293423cdd09fe8ee93/w540.jpg",
-      "description": "12 motion-control sports on Wuhu Island — from Bowling and Tennis to new Skateboarding and Thumb Wrestling — solo, local, or online.",
+      "description": "12 motion-control sports on Wuhu Island \u2014 from Bowling and Tennis to new Skateboarding and Thumb Wrestling \u2014 solo, local, or online.",
       "history": [
         {
           "date": "2026-10-29",
@@ -1777,7 +1777,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Sports / Party",
-        "players": "1–4 · online 2–16",
+        "players": "1\u20134 \u00b7 online 2\u201316",
         "size": "10.3 GB",
         "sizeGB": 10.3
       },
@@ -1820,7 +1820,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Multiplayer action",
-        "players": "1 · online up to 8",
+        "players": "1 \u00b7 online up to 8",
         "size": "TBA",
         "sizeGB": null
       },
@@ -1844,6 +1844,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 24.99
+        },
+        {
+          "date": "2026-11-04",
+          "note": "Sale \u2014 ends Nov 18",
+          "price": 9.99
         }
       ],
       "hltb": {
@@ -1853,9 +1858,9 @@
         "url": "https://howlongtobeat.com/game/89573"
       },
       "id": "teenage-mutant-ninja-turtles-shredders-revenge",
-      "lowestEver": 24.99,
+      "lowestEver": 9.99,
       "platform": "Switch 2",
-      "price": 24.99,
+      "price": 9.99,
       "regularPrice": 24.99,
       "releaseDate": "2022-06-16",
       "review": {
@@ -1863,7 +1868,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/13252/teenage-mutant-ninja-turtles-shredders-revenge/reviews?page=9"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-11-18",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000039366/1537216410d78d991118c92de61d97e82be556ccf45429b6873f7aa1994e4830",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000039366/3c544b266b28d8593a65308298ae4cba39cf1331cae504ab50693d311a9a5021",
@@ -1875,7 +1880,7 @@
         "extra": "Dotemu",
         "extraLabel": "PUBLISHER",
         "genre": "Action / Beat 'em up",
-        "players": "1–6",
+        "players": "1\u20136",
         "size": "1.6 GB",
         "sizeGB": 1.6
       },
@@ -1955,12 +1960,12 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale — ends Nov 12",
+          "note": "Sale \u2014 ends Nov 12",
           "price": 42.99
         },
         {
           "date": "2026-11-02",
-          "note": "Back to full price — eShop verified $49.99; the $42.99 price was a retailer digital-code deal, not an eShop sale",
+          "note": "Back to full price \u2014 eShop verified $49.99; the $42.99 price was a retailer digital-code deal, not an eShop sale",
           "price": 49.99
         }
       ],
@@ -1993,7 +1998,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Shooter",
-        "players": "1–2 · online up to 8",
+        "players": "1\u20132 \u00b7 online up to 8",
         "size": "14.8 GB",
         "sizeGB": 14.8
       },
@@ -2019,7 +2024,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 59.99
         }
       ],
@@ -2178,7 +2183,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000107421/ccb2d70f7ad6878b78d366898a0f0baf94a2d3350b76725c88b591453a797502",
       "boxart": "https://cdn.dekudeals.com/images/be474116c979afae06b5670cc27937555147f117/w540.jpg",
-      "description": "Play as a Ditto and build a new life with Pokémon from the ground up, rebuilding a desolate world into a charming utopia alongside Professor Tangrowth. Learn the moves of your fellow Pokémon to change the land, craft items, and create habitats for your Pokémon friends.",
+      "description": "Play as a Ditto and build a new life with Pok\u00e9mon from the ground up, rebuilding a desolate world into a charming utopia alongside Professor Tangrowth. Learn the moves of your fellow Pok\u00e9mon to change the land, craft items, and create habitats for your Pok\u00e9mon friends.",
       "history": [
         {
           "date": "2026-10-29",
@@ -2215,7 +2220,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Simulation",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "6.8 GB",
         "sizeGB": 6.8
       },
@@ -2226,7 +2231,7 @@
         "Digital",
         "ESRB E"
       ],
-      "title": "Pokémon Pokopia",
+      "title": "Pok\u00e9mon Pokopia",
       "trailer": "SDh6COB0Nqk"
     },
     {
@@ -2324,7 +2329,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Action, Platformer",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "8.9 GB",
         "sizeGB": 8.9
       },
@@ -2335,7 +2340,7 @@
         "Digital",
         "ESRB E"
       ],
-      "title": "Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park",
+      "title": "Super Mario Bros. Wonder \u2013 Nintendo Switch 2 Edition + Meetup in Bellabel Park",
       "trailer": "2rt5XAAeBb4"
     },
     {
@@ -2373,7 +2378,7 @@
         "extra": "Klei Entertainment",
         "extraLabel": "PUBLISHER",
         "genre": "Action",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "2.4 GB",
         "sizeGB": 2.4
       },
@@ -2399,7 +2404,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 59.99
         }
       ],
@@ -2597,7 +2602,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "RPG",
-        "players": "1 · online up to 32",
+        "players": "1 \u00b7 online up to 32",
         "size": "14.8 GB",
         "sizeGB": 14.8
       },
@@ -2608,7 +2613,7 @@
         "Digital",
         "ESRB T"
       ],
-      "title": "Xenoblade Chronicles X: Definitive Edition – Nintendo Switch 2 Edition",
+      "title": "Xenoblade Chronicles X: Definitive Edition \u2013 Nintendo Switch 2 Edition",
       "trailer": "LC0XfI25wro"
     },
     {
@@ -2623,7 +2628,7 @@
         },
         {
           "date": "2026-11-02",
-          "note": "Sale — ends Nov 16",
+          "note": "Sale \u2014 ends Nov 16",
           "price": 7.49
         }
       ],
@@ -2891,7 +2896,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000064132/cf6a52d93890df44059d7ba1376beec19155112c7b9cff000ba10eabea0f6ecd",
       "boxart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000064132/cf6a52d93890df44059d7ba1376beec19155112c7b9cff000ba10eabea0f6ecd",
-      "description": "Command turn-based battles across two full campaigns — Advance Wars and Advance Wars 2: Black Hole Rising — remade from the ground up, with multiplayer for up to four players locally.",
+      "description": "Command turn-based battles across two full campaigns \u2014 Advance Wars and Advance Wars 2: Black Hole Rising \u2014 remade from the ground up, with multiplayer for up to four players locally.",
       "history": [
         {
           "date": "2026-10-29",
@@ -2928,7 +2933,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Strategy",
-        "players": "1–4",
+        "players": "1\u20134",
         "size": "6.7 GB",
         "sizeGB": 6.7
       },
@@ -2994,13 +2999,13 @@
         "Adventure",
         "ESRB T"
       ],
-      "title": "Metroid Prime 4: Beyond – Nintendo Switch 2 Edition",
+      "title": "Metroid Prime 4: Beyond \u2013 Nintendo Switch 2 Edition",
       "trailer": ""
     },
     {
       "banner": "https://img-eshop.cdn.nintendo.net/i/770dc64c402c949be24c2cfe319cfd0eb4181ec18c7077122d8deaedbf6e23d5.jpg?w=1000",
       "boxart": "https://img-eshop.cdn.nintendo.net/i/770dc64c402c949be24c2cfe319cfd0eb4181ec18c7077122d8deaedbf6e23d5.jpg?w=1000",
-      "description": "Explore Lumiose City, catch Pokémon in wild zones, and battle in real time as you climb the ranks of the Z-A Royale in this urban Pokémon adventure, enhanced for Nintendo Switch 2.",
+      "description": "Explore Lumiose City, catch Pok\u00e9mon in wild zones, and battle in real time as you climb the ranks of the Z-A Royale in this urban Pok\u00e9mon adventure, enhanced for Nintendo Switch 2.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3049,7 +3054,7 @@
         "RPG",
         "ESRB E10+"
       ],
-      "title": "Pokémon Legends: Z-A – Nintendo Switch 2 Edition",
+      "title": "Pok\u00e9mon Legends: Z-A \u2013 Nintendo Switch 2 Edition",
       "trailer": ""
     },
     {
@@ -3064,7 +3069,7 @@
         },
         {
           "date": "2026-11-02",
-          "note": "Sale — ends Nov 16",
+          "note": "Sale \u2014 ends Nov 16",
           "price": 38.99
         }
       ],
@@ -3151,7 +3156,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Action / Adventure",
-        "players": "1–2",
+        "players": "1\u20132",
         "size": "9 GB",
         "sizeGB": 9
       },
@@ -3170,7 +3175,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70070000030770/0acaf709e29c57e125e90032853562562843757d238fec2815a52ec0409c6fd1",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/Marketing/7k9mX2qR8vN4pL6sY1uE3wA5zT0hB9jC/intro/smg-smg2-keyart-2x.jpg",
-      "description": "Both Wii classics in one bundle — journey across the cosmos with Rosalina in Super Mario Galaxy and ride Yoshi aboard Starship Mario in Super Mario Galaxy 2, with a free update adding 4K support on Nintendo Switch 2.",
+      "description": "Both Wii classics in one bundle \u2014 journey across the cosmos with Rosalina in Super Mario Galaxy and ride Yoshi aboard Starship Mario in Super Mario Galaxy 2, with a free update adding 4K support on Nintendo Switch 2.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3201,7 +3206,7 @@
         "extra": "Nintendo",
         "extraLabel": "PUBLISHER",
         "genre": "Action / Adventure",
-        "players": "1–2",
+        "players": "1\u20132",
         "size": "5.9 GB",
         "sizeGB": 5.9
       },
@@ -3220,7 +3225,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000098812/7579bbf8c30a30703291f02516dab590f4583fb72b23d75287772feeaefaec33",
       "boxart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000098812/7579bbf8c30a30703291f02516dab590f4583fb72b23d75287772feeaefaec33",
-      "description": "A first-person, single-player adventure set in 1937 — Indiana Jones races a sinister enemy across the Vatican, Egypt, and Sukhothai to unravel the mystery of the Great Circle.",
+      "description": "A first-person, single-player adventure set in 1937 \u2014 Indiana Jones races a sinister enemy across the Vatican, Egypt, and Sukhothai to unravel the mystery of the Great Circle.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3229,7 +3234,7 @@
         },
         {
           "date": "2026-11-01",
-          "note": "Sale ended — back to full price",
+          "note": "Sale ended \u2014 back to full price",
           "price": 69.99
         }
       ],
@@ -3279,7 +3284,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/fa273ddab46dfa870047000f4bc920d3d77e0f242064037971ac717416048a2d",
       "boxart": "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_2.0/store/software/switch2/70010000110051/fa273ddab46dfa870047000f4bc920d3d77e0f242064037971ac717416048a2d",
-      "description": "A superhero workplace comedy from the writers of Tales from the Borderlands and The Wolf Among Us — play as Robert Robertson, a former hero working as a dispatcher for a team of reformed supervillains.",
+      "description": "A superhero workplace comedy from the writers of Tales from the Borderlands and The Wolf Among Us \u2014 play as Robert Robertson, a former hero working as a dispatcher for a team of reformed supervillains.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3327,13 +3332,13 @@
         "Narrative",
         "Adventure"
       ],
-      "title": "Dispatch – Nintendo Switch 2 Edition",
+      "title": "Dispatch \u2013 Nintendo Switch 2 Edition",
       "trailer": ""
     },
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000115859/b6a70a65ef1c26637e54c2c855142815ed618f836d5c2c16f2235eed8b81448d",
       "boxart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000115859/b6a70a65ef1c26637e54c2c855142815ed618f836d5c2c16f2235eed8b81448d",
-      "description": "A handcrafted stop-motion co-op platformer — guide Kurt and Karla through the colorful world of Vokabulantis and save it from a grammar-devouring villain.",
+      "description": "A handcrafted stop-motion co-op platformer \u2014 guide Kurt and Karla through the colorful world of Vokabulantis and save it from a grammar-devouring villain.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3431,7 +3436,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000099705/1a97532158b654a9be624b8ebf9fdbaa92bc07eb8a4a63066f7183b61dfe519e",
       "boxart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000099705/1a97532158b654a9be624b8ebf9fdbaa92bc07eb8a4a63066f7183b61dfe519e",
-      "description": "An open-world LEGO adventure tracing Bruce Wayne's journey from origin to legend — fight crime across Gotham City with seven playable characters, 100 suits, and more than 20 vehicles.",
+      "description": "An open-world LEGO adventure tracing Bruce Wayne's journey from origin to legend \u2014 fight crime across Gotham City with seven playable characters, 100 suits, and more than 20 vehicles.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3468,7 +3473,7 @@
         "extra": "Warner Bros. Games",
         "extraLabel": "PUBLISHER",
         "genre": "Action / Adventure",
-        "players": "1–2",
+        "players": "1\u20132",
         "size": "23.7 GB",
         "sizeGB": 23.7
       },
@@ -3486,7 +3491,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000020033/df825d5fc6747b66b051f5d3ba6a412fe625ea7878b6a10c93bb8312195682b1",
       "boxart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000020033/df825d5fc6747b66b051f5d3ba6a412fe625ea7878b6a10c93bb8312195682b1",
-      "description": "Link washes ashore on the mysterious Koholint Island in this remake of the Game Boy classic — explore dungeons and collect the instruments needed to wake the Wind Fish and find a way home.",
+      "description": "Link washes ashore on the mysterious Koholint Island in this remake of the Game Boy classic \u2014 explore dungeons and collect the instruments needed to wake the Wind Fish and find a way home.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3541,7 +3546,7 @@
     {
       "banner": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000084618/e3a49cf14180cec09c515595fb7121b048a0f8327eae2d248909d0f0c64a9dc9",
       "boxart": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000084618/e3a49cf14180cec09c515595fb7121b048a0f8327eae2d248909d0f0c64a9dc9",
-      "description": "Princess Zelda takes the lead to save Hyrule — team up with the ethereal creature Tri and use the Tri Rod to create echoes of objects and monsters to solve puzzles and defeat enemies.",
+      "description": "Princess Zelda takes the lead to save Hyrule \u2014 team up with the ethereal creature Tri and use the Tri Rod to create echoes of objects and monsters to solve puzzles and defeat enemies.",
       "history": [
         {
           "date": "2026-10-29",
@@ -3600,7 +3605,7 @@
       "history": [
         {
           "date": "2026-10-29",
-          "note": "Added from App Store · expected Dec 4, 2026",
+          "note": "Added from App Store \u00b7 expected Dec 4, 2026",
           "price": null
         }
       ],
@@ -3619,14 +3624,14 @@
         "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1b/48/08/1b480826-8157-a096-a444-670c4bb2f03b/EN-2208x1242-5.png/1242x699bb.jpg"
       ],
       "specs": {
-        "extra": "HoYoverse · Cognosphere",
+        "extra": "HoYoverse \u00b7 Cognosphere",
         "extraLabel": "DEVELOPER",
         "genre": "Simulation",
         "players": "",
         "size": "4.0 GB",
         "sizeGB": 4
       },
-      "statusNote": "Coming soon · expected Dec 4, 2026 · Free download",
+      "statusNote": "Coming soon \u00b7 expected Dec 4, 2026 \u00b7 Free download",
       "store": "App Store",
       "storeUrl": "https://apps.apple.com/us/app/petit-planet/id6776621908",
       "tags": [
@@ -3640,11 +3645,11 @@
     {
       "banner": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a2/45/a9/a245a996-ed95-7fbd-4748-18ecf1da4498/01_FTUE_iPhone_2868x1320_Englsih.png/1242x571bb.jpg",
       "boxart": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/18/4b/04/184b04cb-65d6-43f5-15da-7d8ad964483f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-      "description": "A dark fantasy action RPG. The world is broken and The Devouring consumes what remains — only the Primals, heroes forged through trauma and bound by elemental power, can push back the Void. Real-time combat, character bonds, and daily progression.",
+      "description": "A dark fantasy action RPG. The world is broken and The Devouring consumes what remains \u2014 only the Primals, heroes forged through trauma and bound by elemental power, can push back the Void. Real-time combat, character bonds, and daily progression.",
       "history": [
         {
           "date": "2026-10-29",
-          "note": "Added from App Store · expected Nov 11, 2026",
+          "note": "Added from App Store \u00b7 expected Nov 11, 2026",
           "price": null
         }
       ],
@@ -3670,7 +3675,7 @@
         "size": "3.8 GB",
         "sizeGB": 3.8
       },
-      "statusNote": "Coming soon · expected Nov 11, 2026",
+      "statusNote": "Coming soon \u00b7 expected Nov 11, 2026",
       "store": "App Store",
       "storeUrl": "https://apps.apple.com/us/app/ungodly/id6740617332",
       "tags": [
@@ -3681,5 +3686,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-02"
+  "updated": "2026-11-04"
 }
