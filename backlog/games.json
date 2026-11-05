@@ -1355,6 +1355,11 @@
       "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-11-05",
+      "review": {
+        "score": 95,
+        "source": "OpenCritic",
+        "url": "https://opencritic.com/game/21344/the-legend-of-zelda-ocarina-of-time"
+      },
       "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000130792/2e76ea7cb3eb833a0cbe8c9b016b28b3a7ef95838b66c1eaced1c0db7747dd37",
@@ -2243,6 +2248,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 39.99
+        },
+        {
+          "date": "2026-11-05",
+          "note": "Sale \u2014 ends Nov 18",
+          "price": 33.99
         }
       ],
       "hltb": {
@@ -2252,9 +2262,9 @@
         "url": "https://howlongtobeat.com/game/169405"
       },
       "id": "high-on-life-2",
-      "lowestEver": 39.99,
+      "lowestEver": 33.99,
       "platform": "Switch 2",
-      "price": 39.99,
+      "price": 33.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-07-01",
       "review": {
@@ -2262,7 +2272,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/19191/high-on-life-2/charts"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-11-18",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103446/474618442661c341e435e11b4a8fe033543497c653f8b8f927b606dba9c50332",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103446/d0799bfd51916408b76c3f782fe9c9f46e0c7bdb5277dd8baa3be7882d6cb0d9",
@@ -2461,6 +2471,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 39.99
+        },
+        {
+          "date": "2026-11-05",
+          "note": "Sale \u2014 ends Nov 18",
+          "price": 19.99
         }
       ],
       "hltb": {
@@ -2470,9 +2485,9 @@
         "url": "https://howlongtobeat.com/game/109245"
       },
       "id": "high-on-life-nintendo-switch-2-edition",
-      "lowestEver": 39.99,
+      "lowestEver": 19.99,
       "platform": "Switch 2",
-      "price": 39.99,
+      "price": 19.99,
       "regularPrice": 39.99,
       "releaseDate": "2025-08-28",
       "review": {
@@ -2480,7 +2495,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/13964/high-on-life"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-11-18",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000104842/002ad18ada04534cff88a73876ad578625719b74d2d579fd49023a958011cce0",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000104842/78f5c33be4e3d0c413328dfd87289dbe36bb9f7002356bdc9363ef29a8396c2a",
@@ -3686,5 +3701,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-04"
+  "updated": "2026-11-05"
 }
