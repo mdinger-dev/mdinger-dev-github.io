@@ -511,6 +511,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 39.99
+        },
+        {
+          "date": "2026-11-08",
+          "note": "Sale ended \u2014 back to full price",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -522,7 +527,7 @@
       "id": "resident-evil-4-gold-edition",
       "lowestEver": 39.99,
       "platform": "Switch 2",
-      "price": 39.99,
+      "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-10-16",
       "review": {
@@ -530,7 +535,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/14200/resident-evil-4-2023-"
       },
-      "saleEnds": "2026-11-07",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000122497/1f75919fb3b31f70e0386206fe6a3f9e98814d2772b9a7836c97541947253b2f",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000122497/df4bda75bfc71b3a22bd79911db0d48bc7ff2861f16d7fed6273b4e94c16d265",
@@ -1376,7 +1381,7 @@
         "size": "27 GB",
         "sizeGB": 27
       },
-      "statusNote": "Pre-order \u00b7 releases Nov 5, 2026",
+      "statusNote": null,
       "store": "Nintendo eShop",
       "storeUrl": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
       "tags": [
@@ -3701,5 +3706,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-05"
+  "updated": "2026-11-08"
 }
