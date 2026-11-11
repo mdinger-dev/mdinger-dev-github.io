@@ -1121,7 +1121,7 @@
         "size": null,
         "sizeGB": null
       },
-      "statusNote": "Coming 2027",
+      "statusNote": "Coming Spring 2027",
       "store": "Nintendo eShop",
       "storeUrl": "https://www.nintendo.com/us/store/products/spyro-a-realm-beyond-switch-2/",
       "tags": [
@@ -3671,13 +3671,18 @@
           "date": "2026-10-29",
           "note": "Added from App Store \u00b7 expected Nov 11, 2026",
           "price": null
+        },
+        {
+          "date": "2026-11-11",
+          "note": "Released \u2014 free-to-play",
+          "price": 0
         }
       ],
       "id": "ungodly-ios",
-      "lowestEver": null,
+      "lowestEver": 0,
       "platform": "iPhone",
-      "price": null,
-      "regularPrice": null,
+      "price": 0,
+      "regularPrice": 0,
       "releaseDate": "2026-11-11",
       "saleEnds": null,
       "screenshots": [
@@ -3695,7 +3700,7 @@
         "size": "3.8 GB",
         "sizeGB": 3.8
       },
-      "statusNote": "Coming soon \u00b7 expected Nov 11, 2026",
+      "statusNote": null,
       "store": "App Store",
       "storeUrl": "https://apps.apple.com/us/app/ungodly/id6740617332",
       "tags": [
@@ -3706,5 +3711,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-08"
+  "updated": "2026-11-11"
 }
