@@ -20,6 +20,11 @@
           "date": "2026-10-28",
           "note": "Sale \u2014 ends Nov 12 \u00b7 alert sent",
           "price": 23.99
+        },
+        {
+          "date": "2026-11-13",
+          "note": "Sale ended \u2014 back to full price",
+          "price": 59.99
         }
       ],
       "hltb": {
@@ -31,7 +36,7 @@
       "id": "no-mans-sky-switch-2",
       "lowestEver": 23.99,
       "platform": "Switch 2",
-      "price": 23.99,
+      "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2025-06-05",
       "review": {
@@ -39,7 +44,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/2393/2393/reviews?sort=newest&page=8"
       },
-      "saleEnds": "2026-11-12",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099217/96db5cbc020c2e1a7ca5d54e4efdafe520768311e65f1568e366d4eb265c3bdd",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099217/79d77af66c759876cea184a02d9426791bab76864ea0b20100d2a9ac25d44db6",
@@ -3711,5 +3716,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-11"
+  "updated": "2026-11-13"
 }
