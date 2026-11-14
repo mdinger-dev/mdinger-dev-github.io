@@ -1147,6 +1147,12 @@
           "price": 49.99
         }
       ],
+      "hltb": {
+        "completionist": 63,
+        "main": 39.5,
+        "mainExtra": 50,
+        "url": "https://howlongtobeat.com/game/187293"
+      },
       "id": "final-fantasy-resonance",
       "lowestEver": 49.99,
       "platform": "Switch 2",
@@ -3716,5 +3722,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-13"
+  "updated": "2026-11-14"
 }
