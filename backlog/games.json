@@ -462,6 +462,11 @@
           "date": "2026-11-02",
           "note": "Sale — ends Nov 16",
           "price": 29.99
+        },
+        {
+          "date": "2026-11-18",
+          "note": "Sale ended — back to full price",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -473,7 +478,7 @@
       "id": "crisis-core-final-fantasy-vii-reunion",
       "lowestEver": 29.99,
       "platform": "Switch 2",
-      "price": 29.99,
+      "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-09-09",
       "review": {
@@ -481,7 +486,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/14063/crisis-core-final-fantasy-vii-reunion"
       },
-      "saleEnds": "2026-11-16",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000106970/58cd165c878dca37c123c185f5e2915c9cd4c50ee451ffb35ec057a71b5aeec5",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000106970/85d76300d1dba9401ef47ae2b8d9c9d3f9ae7e7a958c679184dbd6b4f8d7e061",
@@ -1927,8 +1932,8 @@
         },
         {
           "date": "2026-11-15",
-          "price": 14.99,
-          "note": "Sale — ends Nov 19"
+          "note": "Sale — ends Nov 19",
+          "price": 14.99
         }
       ],
       "hltb": {
@@ -2497,6 +2502,11 @@
           "date": "2026-11-05",
           "note": "Sale — ends Nov 18",
           "price": 19.99
+        },
+        {
+          "date": "2026-11-18",
+          "note": "Sale ended — back to full price",
+          "price": 39.99
         }
       ],
       "hltb": {
@@ -2508,7 +2518,7 @@
       "id": "high-on-life-nintendo-switch-2-edition",
       "lowestEver": 19.99,
       "platform": "Switch 2",
-      "price": 19.99,
+      "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2025-08-28",
       "review": {
@@ -2516,7 +2526,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/13964/high-on-life"
       },
-      "saleEnds": "2026-11-18",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000104842/002ad18ada04534cff88a73876ad578625719b74d2d579fd49023a958011cce0",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000104842/78f5c33be4e3d0c413328dfd87289dbe36bb9f7002356bdc9363ef29a8396c2a",
@@ -2666,6 +2676,11 @@
           "date": "2026-11-02",
           "note": "Sale — ends Nov 16",
           "price": 7.49
+        },
+        {
+          "date": "2026-11-18",
+          "note": "Sale ended — back to full price",
+          "price": 49.99
         }
       ],
       "hltb": {
@@ -2677,7 +2692,7 @@
       "id": "final-fantasy-vii-rebirth",
       "lowestEver": 7.49,
       "platform": "Switch 2",
-      "price": 7.49,
+      "price": 49.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-06-03",
       "review": {
@@ -2685,7 +2700,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/15136/-/reviews?sort=popularity&page=4"
       },
-      "saleEnds": "2026-11-16",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000112477/dcd91fed263b37c5cba3d0f6cb85da95a5e06f8e2aece1bba4e4f5a9402a3e51",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000112477/cf340c61911f166b8bede7891ef6cb24af418dd2a21ffa3f7fb2185ed743fe64",
@@ -3107,6 +3122,11 @@
           "date": "2026-11-02",
           "note": "Sale — ends Nov 16",
           "price": 38.99
+        },
+        {
+          "date": "2026-11-18",
+          "note": "Sale ended — back to full price",
+          "price": 59.99
         }
       ],
       "hltb": {
@@ -3118,7 +3138,7 @@
       "id": "dragon-quest-vii-reimagined",
       "lowestEver": 38.99,
       "platform": "Switch 2",
-      "price": 38.99,
+      "price": 59.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-02-05",
       "review": {
@@ -3126,7 +3146,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/19296/dragon-quest-vii-reimagined"
       },
-      "saleEnds": "2026-11-16",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098990/a90948e38c198761c4ac2dccb24bb6807c7b2bdd92f48a407d81fd62cece44af",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000098990/d1c4e4cad274d5759cf75a05908cd3b47f77768bfdc812c9aa6c5ae08f63b379",
@@ -3326,6 +3346,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 29.99
+        },
+        {
+          "date": "2026-11-18",
+          "note": "Sale — ends Nov 21",
+          "price": 23.99
         }
       ],
       "hltb": {
@@ -3335,9 +3360,9 @@
         "url": null
       },
       "id": "dispatch-nintendo-switch-2-edition",
-      "lowestEver": 29.99,
+      "lowestEver": 23.99,
       "platform": "Switch 2",
-      "price": 29.99,
+      "price": 23.99,
       "regularPrice": 29.99,
       "releaseDate": "2026-01-28",
       "review": {
@@ -3345,7 +3370,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/19505/game/reviews?sort=newest"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-11-21",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/1b704f6b17d318c7d284859d08863ea0ea0816a22f38258a525bf4bc21fb73a0",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/b33dcad11f8c65aca40901f45bf6a4ac4e470ed441c2059e17de4cbb51a1384a",
@@ -3423,6 +3448,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 49.99
+        },
+        {
+          "date": "2026-11-18",
+          "note": "Sale — 20% off",
+          "price": 39.99
         }
       ],
       "hltb": {
@@ -3432,9 +3462,9 @@
         "url": "https://howlongtobeat.com/game/181985"
       },
       "id": "metal-gear-solid-master-collection-vol-2",
-      "lowestEver": 49.99,
+      "lowestEver": 39.99,
       "platform": "Switch 2",
-      "price": 49.99,
+      "price": 39.99,
       "regularPrice": 49.99,
       "releaseDate": "2026-08-27",
       "review": {
@@ -3727,5 +3757,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-15"
+  "updated": "2026-11-18"
 }
