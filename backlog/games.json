@@ -1875,6 +1875,11 @@
           "date": "2026-11-04",
           "note": "Sale — ends Nov 18",
           "price": 9.99
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Sale ended — back to full price",
+          "price": 24.99
         }
       ],
       "hltb": {
@@ -1886,7 +1891,7 @@
       "id": "teenage-mutant-ninja-turtles-shredders-revenge",
       "lowestEver": 9.99,
       "platform": "Switch 2",
-      "price": 9.99,
+      "price": 24.99,
       "regularPrice": 24.99,
       "releaseDate": "2022-06-16",
       "review": {
@@ -1894,7 +1899,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/13252/teenage-mutant-ninja-turtles-shredders-revenge/reviews?page=9"
       },
-      "saleEnds": "2026-11-18",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000039366/1537216410d78d991118c92de61d97e82be556ccf45429b6873f7aa1994e4830",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70010000039366/3c544b266b28d8593a65308298ae4cba39cf1331cae504ab50693d311a9a5021",
@@ -1934,6 +1939,11 @@
           "date": "2026-11-15",
           "note": "Sale — ends Nov 19",
           "price": 14.99
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Sale ended — back to full price",
+          "price": 19.99
         }
       ],
       "hltb": {
@@ -1945,7 +1955,7 @@
       "id": "mixtape",
       "lowestEver": 14.99,
       "platform": "Switch 2",
-      "price": 14.99,
+      "price": 19.99,
       "regularPrice": 19.99,
       "releaseDate": "2026-05-07",
       "review": {
@@ -1953,7 +1963,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/20188/mixtape"
       },
-      "saleEnds": "2026-11-19",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000113916/83ff273c2d375ea73073b00ad2be2bf9d8ebe3a907ab7ccf44e2513fc3c96fdd",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000113916/3cd8f4188c609d5bc3a547f4b7980e26ef0ca2ce4d56faf33d3c75f0c5b1ad29",
@@ -2279,6 +2289,11 @@
           "date": "2026-11-05",
           "note": "Sale — ends Nov 18",
           "price": 33.99
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Sale ended — back to full price",
+          "price": 39.99
         }
       ],
       "hltb": {
@@ -2290,7 +2305,7 @@
       "id": "high-on-life-2",
       "lowestEver": 33.99,
       "platform": "Switch 2",
-      "price": 33.99,
+      "price": 39.99,
       "regularPrice": 39.99,
       "releaseDate": "2026-07-01",
       "review": {
@@ -2298,7 +2313,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/19191/high-on-life-2/charts"
       },
-      "saleEnds": "2026-11-18",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103446/474618442661c341e435e11b4a8fe033543497c653f8b8f927b606dba9c50332",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000103446/d0799bfd51916408b76c3f782fe9c9f46e0c7bdb5277dd8baa3be7882d6cb0d9",
@@ -2388,6 +2403,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 29.99
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Sale — ends Dec 2",
+          "price": 22.49
         }
       ],
       "hltb": {
@@ -2397,12 +2417,12 @@
         "url": "https://howlongtobeat.com/game/109303"
       },
       "id": "rotwood",
-      "lowestEver": 29.99,
+      "lowestEver": 22.49,
       "platform": "Switch 2",
-      "price": 29.99,
+      "price": 22.49,
       "regularPrice": 29.99,
       "releaseDate": "2026-03-03",
-      "saleEnds": null,
+      "saleEnds": "2026-12-02",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099153/3e9c08f1106df39f4d5cc49a8b05be6d42af31e0f5a5c91cf53bef5390339692",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000099153/78449e59a366d00e7988eefc1980aadea2e139fd12dcef562e836995badd30d7",
@@ -2735,6 +2755,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 59.99
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Sale — ends Dec 3",
+          "price": 32.98
         }
       ],
       "hltb": {
@@ -2744,9 +2769,9 @@
         "url": "https://howlongtobeat.com/game/145003"
       },
       "id": "assassins-creed-shadows",
-      "lowestEver": 59.99,
+      "lowestEver": 32.98,
       "platform": "Switch 2",
-      "price": 59.99,
+      "price": 32.98,
       "regularPrice": 59.99,
       "releaseDate": "2025-12-02",
       "review": {
@@ -2754,7 +2779,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/16792/assassins-creed-shadows"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-12-03",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101043/a84d3fc77995ec699dc770fe1a3b2e5dc2aa3521c0d9e8c130f51d5c30b60678",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000101043/01a5078449adce58986dd9657b50dd49bebcba9995d3f0e760e356451269a419",
@@ -3351,6 +3376,11 @@
           "date": "2026-11-18",
           "note": "Sale — ends Nov 21",
           "price": 23.99
+        },
+        {
+          "date": "2026-11-19",
+          "note": "Sale ended — back to full price",
+          "price": 29.99
         }
       ],
       "hltb": {
@@ -3362,7 +3392,7 @@
       "id": "dispatch-nintendo-switch-2-edition",
       "lowestEver": 23.99,
       "platform": "Switch 2",
-      "price": 23.99,
+      "price": 29.99,
       "regularPrice": 29.99,
       "releaseDate": "2026-01-28",
       "review": {
@@ -3370,7 +3400,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/19505/game/reviews?sort=newest"
       },
-      "saleEnds": "2026-11-21",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/1b704f6b17d318c7d284859d08863ea0ea0816a22f38258a525bf4bc21fb73a0",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000110051/b33dcad11f8c65aca40901f45bf6a4ac4e470ed441c2059e17de4cbb51a1384a",
@@ -3472,7 +3502,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/20107/metal-gear-solid-master-collection-vol-2/reviews"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-12-07",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70070000033532/120739d4d836ff03109861571a2dfb52506d747d35da939438a3c508688ccd86",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70070000033532/15857b8f96c565f5fda638819dca9198ea66f6754bdb85a6bbbc1c436008645c",
@@ -3757,5 +3787,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-18"
+  "updated": "2026-11-19"
 }
