@@ -347,6 +347,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 59.99
+        },
+        {
+          "date": "2026-11-20",
+          "note": "Sale — ends Dec 3",
+          "price": 41.99
         }
       ],
       "hltb": {
@@ -356,9 +361,9 @@
         "url": "https://howlongtobeat.com/game/106639"
       },
       "id": "hell-is-us",
-      "lowestEver": 59.99,
+      "lowestEver": 41.99,
       "platform": "Switch 2",
-      "price": 59.99,
+      "price": 41.99,
       "regularPrice": 59.99,
       "releaseDate": "2026-10-08",
       "review": {
@@ -366,7 +371,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/18115/hell-is-us"
       },
-      "saleEnds": null,
+      "saleEnds": "2026-12-03",
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000115616/64794c8fae67d62ee3c960d7065407d41c6a2733a76e769a02c59c001a83b1c5",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000115616/2438bf2e9d9b38067dcef30405340b3f5a3b21321708fef6b88e4c28385ba5e1",
@@ -3787,5 +3792,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-19"
+  "updated": "2026-11-20"
 }
