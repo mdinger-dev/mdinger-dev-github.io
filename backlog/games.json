@@ -3216,6 +3216,11 @@
           "date": "2026-11-22",
           "note": "Sale — ends Dec 2",
           "price": 49.99
+        },
+        {
+          "date": "2026-11-23",
+          "price": 69.99,
+          "note": "Correction — Nov 22 sale was retailer/physical only; eShop digital is full price"
         }
       ],
       "hltb": {
@@ -3225,9 +3230,9 @@
         "url": "https://howlongtobeat.com/game/166252"
       },
       "id": "donkey-kong-bananza",
-      "lowestEver": 49.99,
+      "lowestEver": 69.99,
       "platform": "Switch 2",
-      "price": 49.99,
+      "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2025-07-17",
       "review": {
@@ -3235,7 +3240,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/18340/donkey-kong-bananza"
       },
-      "saleEnds": "2026-12-02",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000096809/c111819ae2b07f446ab92d64c8d37e9ef8e541e30b687121fa6d5976096b61f9",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch2/70010000096809/b8ae4b278d62fb9683adf9939c79a3fc5ac71a671d1d644eb8774c4904e34ee2",
@@ -3277,12 +3282,17 @@
           "date": "2026-11-22",
           "note": "Sale — ends Dec 2",
           "price": 49.99
+        },
+        {
+          "date": "2026-11-23",
+          "price": 69.99,
+          "note": "Correction — Nov 22 sale was retailer/physical only; eShop digital is full price"
         }
       ],
       "id": "super-mario-galaxy-plus-super-mario-galaxy-2",
-      "lowestEver": 49.99,
+      "lowestEver": 69.99,
       "platform": "Switch 2",
-      "price": 49.99,
+      "price": 69.99,
       "regularPrice": 69.99,
       "releaseDate": "2025-10-02",
       "review": {
@@ -3290,7 +3300,7 @@
         "source": "OpenCritic",
         "url": "https://opencritic.com/game/19299/super-mario-galaxy-super-mario-galaxy-2"
       },
-      "saleEnds": "2026-12-02",
+      "saleEnds": null,
       "screenshots": [
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000030770/076acf13b378125791d6731ed45cbecc825abb448cc0811200ec8233802c644e",
         "https://assets.nintendo.com/image/upload/q_auto/f_auto/dpr_2.0/store/software/switch/70070000030770/2eafc395d5c6fbbcbccc7e151a2552f15d83d5d881bb074d3bc881a38191e440",
@@ -3802,5 +3812,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-22"
+  "updated": "2026-11-23"
 }
