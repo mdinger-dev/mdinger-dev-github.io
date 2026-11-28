@@ -673,6 +673,11 @@
           "date": "2026-10-29",
           "note": "Added from Nintendo wishlist",
           "price": 69.99
+        },
+        {
+          "date": "2026-11-28",
+          "note": "Sale — end date not shown",
+          "price": 59.49
         }
       ],
       "hltb": {
@@ -682,9 +687,9 @@
         "url": null
       },
       "id": "call-of-duty-modern-warfare-4-standard-edition",
-      "lowestEver": 69.99,
+      "lowestEver": 59.49,
       "platform": "Switch 2",
-      "price": 69.99,
+      "price": 59.49,
       "regularPrice": 69.99,
       "releaseDate": "2026-10-23",
       "review": {
@@ -3812,5 +3817,5 @@
       "trailer": ""
     }
   ],
-  "updated": "2026-11-23"
+  "updated": "2026-11-28"
 }
